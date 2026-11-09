@@ -629,9 +629,8 @@ export default function FloatingRobotAssistant({
                 <span className="text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.9)] animate-pulse">✦</span>{' '}
                 {isHovered && !showNotification ? "RABIA'S AI" : activeGuideData.label}
               </span>
-              <span className="text-[9.5px] font-bold text-slate-200 group-hover:text-white px-2 py-0.5 rounded-full bg-white/15 group-hover:bg-white/25 border border-white/20 transition-all shadow-sm flex items-center gap-1 drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
+              <span className="text-[9.5px] font-bold text-slate-200 group-hover:text-white px-2 py-0.5 rounded-full bg-white/15 group-hover:bg-white/25 border border-white/20 transition-all shadow-sm flex items-center drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
                 <span>Tap to Chat</span>
-                <span className="text-[9px] font-black">↗</span>
               </span>
             </div>
 

@@ -1,8 +1,14 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import dynamic from 'next/dynamic';
 import { ArrowRight, Compass, FileText } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
+
+const SumiBackground = dynamic(
+  () => import('@/components/three/SumiBackground'),
+  { ssr: false }
+);
 
 // --- CUSTOM ANIME CIPHER TEXT (Untouched) ---
 const CipherGlitchText = ({ words, delay = 3500 }: { words: string[], delay?: number }) => {
@@ -50,17 +56,14 @@ const CipherGlitchText = ({ words, delay = 3500 }: { words: string[], delay?: nu
 };
 
 export default function HeroSection({ animReady = false }: { animReady?: boolean }) {
-  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
     const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-    if (mq.matches && videoRef.current) {
-      try { videoRef.current.pause(); } catch (e) { /* noop */ }
-    }
+    setPrefersReducedMotion(mq.matches);
     const handleChange = () => {
-      if (mq.matches && videoRef.current) videoRef.current.pause();
-      else if (videoRef.current) videoRef.current.play().catch(() => { });
+      setPrefersReducedMotion(mq.matches);
     };
     mq.addEventListener?.('change', handleChange);
     return () => mq.removeEventListener?.('change', handleChange);
@@ -146,23 +149,20 @@ export default function HeroSection({ animReady = false }: { animReady?: boolean
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="relative z-0 isolate min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
-      <video
-        ref={videoRef}
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="metadata"
-        aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover pointer-events-none -z-10 transform-gpu"
-      >
-        <source src="/liveBackground.mp4" type="video/mp4" />
-      </video>
+      {/* 3D Modern Interactive Sumi-e Background */}
+      <div className="absolute inset-0 z-0 w-full h-full overflow-hidden pointer-events-none">
+        <SumiBackground
+          videoSrc="/liveBackground.mp4"
+          mouseEnabled={!prefersReducedMotion}
+          parallaxSensitivity={1.0}
+        />
+      </div>
 
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/50 via-black/30 to-black/50 pointer-events-none" />
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(0,0,0,0.4)_100%)] pointer-events-none" />
+      {/* Retained Filter & Vignette Overlays for Crisp Text Contrast */}
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/50 via-black/30 to-black/50 pointer-events-none" />
+      <div className="absolute inset-0 z-[1] bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(0,0,0,0.4)_100%)] pointer-events-none" />
 
       <div className="relative z-10 max-w-4xl mx-auto text-center" style={{ perspective: '1000px' }}>
         {/* Hero Content */}

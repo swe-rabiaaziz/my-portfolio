@@ -1,18 +1,17 @@
 import './globals.css';
-import type { Metadata, Viewport } from 'next';
+import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import JsonLd from '@/components/JsonLd';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
-export const viewport: Viewport = {
-  themeColor: '#09090b',
-  width: 'device-width',
-  initialScale: 1,
-  maximumScale: 5,
-};
-
 export const metadata: Metadata = {
+  themeColor: '#09090b',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
   metadataBase: new URL('https://swe-rabia-aziz.vercel.app'),
   title: {
     default: 'Rabia Aziz | Flutter Developer & Mobile App Engineer',
