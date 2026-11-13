@@ -25,7 +25,7 @@ A clean, responsive portfolio website built with Next.js and TypeScript to showc
 1. Clone the repository
 
 ```bash
-git clone https://github.com/rabiaAziz-dev/my-portfolio.git
+git clone https://github.com/swe-rabiaaziz/my-portfolio.git
 cd my-portfolio
 ```
 

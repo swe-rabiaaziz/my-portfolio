@@ -34,12 +34,12 @@ export default function SocialSidebar() {
     {
       icon: Github,
       label: "GitHub",
-      url: "https://github.com/rabiaAziz-dev",
+      url: "https://github.com/swe-rabiaaziz",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      url: "https://www.linkedin.com/in/rabiaaziz456/",
+      url: "https://www.linkedin.com/in/swe-rabiaaziz/",
     },
     {
       icon: WhatsAppIcon,

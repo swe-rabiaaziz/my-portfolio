@@ -17,9 +17,9 @@ FULL PROFILE:
 - Email: swe.rabiaaziz@gmail.com
 - Phone: +92 327 5676026
 - WhatsApp: https://wa.me/923275676026 (+92 327 5676026)
-- GitHub: https://github.com/rabiaAziz-dev (@rabiaAziz-dev)
-- LinkedIn: https://www.linkedin.com/in/rabiaaziz456/ (@rabiaaziz456)
-- Instagram: https://www.instagram.com/rabiko_korozawa/ (@rabiko_korozawa)
+- GitHub: https://github.com/swe-rabiaaziz (@swe-rabiaaziz)
+- LinkedIn: https://www.linkedin.com/in/swe-rabiaaziz/ (@swe-rabiaaziz)
+- Instagram: https://www.instagram.com/swe.rabiaaziz/ (@swe.rabiaaziz)
 - Calendly (1-on-1 Meeting): https://calendly.com/swe-rabiaaziz/30min
 - Resume (Google Drive): https://drive.google.com/file/d/1xAb2h17uqQ9PtSzpiO2XRSF1BU8fn-A5/view?usp=drive_link
 

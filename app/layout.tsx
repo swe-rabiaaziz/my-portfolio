@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     description:
       'Cross-platform Flutter developer building AI mobile apps and Supabase backends across mobile, web, and desktop.',
     images: ['/images/og-image.png'],
-    creator: '@rabiaaziz456',
+    creator: '@swe_rabiaaziz',
   },
   robots: {
     index: true,

@@ -131,7 +131,7 @@ function getLocalFallbackResponse(
       : "• 📱 CivicCoach — AI US Citizenship Test 2026: Official USCIS 2026 prep with AI voice mock interviews, 128 questions, and elected officials lookup.\n• 📱 Ethiopian Calendar — Zemen App: Feature-rich 13-month Geez calendar, dual offline date converter, live sunrise clock, and Orthodox fasts.\n• 📱 ZenPeace — Pomodoro Focus & Mindful Flow: A serene Pomodoro timer with ambient soundscapes, focus analytics, and mindfulness tools.\n• 📱 Health Tracker — Vitals & BP Monitor: A personal health companion for logging blood pressure, body temperature, pulse rate, and tracking weekly trend averages.";
 
     return {
-      reply: `Rabia has built 10+ battle-tested mobile, web, and desktop applications using Flutter, Dart, Supabase, and Firebase.\n\nFeatured Projects on her website:\n${liveProjectList}\n\nExplore her Projects showcase or check out her GitHub at https://github.com/rabiaAziz-dev !`,
+      reply: `Rabia has built 10+ battle-tested mobile, web, and desktop applications using Flutter, Dart, Supabase, and Firebase.\n\nFeatured Projects on her website:\n${liveProjectList}\n\nExplore her Projects showcase or check out her GitHub at https://github.com/swe-rabiaaziz !`,
       functionCalls: [{ name: 'scrollToSection', args: { sectionId: 'projects' } }],
     };
   }
@@ -178,7 +178,7 @@ function getLocalFallbackResponse(
 
   if (query.includes('instagram') || query.includes('insta')) {
     return {
-      reply: "You can follow Rabia Aziz on Instagram: https://www.instagram.com/rabiko_korozawa/ (@rabiko_korozawa)!",
+      reply: "You can follow Rabia Aziz on Instagram: https://www.instagram.com/swe.rabiaaziz/ (@swe.rabiaaziz)!",
       functionCalls: null,
     };
   }
@@ -186,14 +186,14 @@ function getLocalFallbackResponse(
   // 6. LinkedIn & Social Links
   if (query.includes('linkedin')) {
     return {
-      reply: "You can connect with Rabia Aziz on LinkedIn here: https://www.linkedin.com/in/rabiaaziz456/ — Feel free to send her a connection request or message for collaboration!",
+      reply: "You can connect with Rabia Aziz on LinkedIn here: https://www.linkedin.com/in/swe-rabiaaziz/ — Feel free to send her a connection request or message for collaboration!",
       functionCalls: null,
     };
   }
 
   if (query.includes('github') || query.includes('repo') || query.includes('source code')) {
     return {
-      reply: "Explore Rabia's open-source projects and code repositories on GitHub: https://github.com/rabiaAziz-dev (@rabiaAziz-dev)",
+      reply: "Explore Rabia's open-source projects and code repositories on GitHub: https://github.com/swe-rabiaaziz (@swe-rabiaaziz)",
       functionCalls: null,
     };
   }
@@ -211,7 +211,7 @@ function getLocalFallbackResponse(
     query.includes('connect')
   ) {
     return {
-      reply: "You can reach Rabia directly through any of these channels:\n• 📧 Email: swe.rabiaaziz@gmail.com\n• 💬 WhatsApp: +92 327 5676026 (https://wa.me/923275676026)\n• 📅 Schedule a 1-on-1 Call: https://calendly.com/swe-rabiaaziz/30min\n• 💼 LinkedIn: https://www.linkedin.com/in/rabiaaziz456/\n\nShe is based in Swat, Pakistan and available worldwide for full-time remote roles and freelance projects!",
+      reply: "You can reach Rabia directly through any of these channels:\n• 📧 Email: swe.rabiaaziz@gmail.com\n• 💬 WhatsApp: +92 327 5676026 (https://wa.me/923275676026)\n• 📅 Schedule a 1-on-1 Call: https://calendly.com/swe-rabiaaziz/30min\n• 💼 LinkedIn: https://www.linkedin.com/in/swe-rabiaaziz/\n\nShe is based in Swat, Pakistan and available worldwide for full-time remote roles and freelance projects!",
       functionCalls: [{ name: 'scrollToSection', args: { sectionId: 'contact' } }],
     };
   }

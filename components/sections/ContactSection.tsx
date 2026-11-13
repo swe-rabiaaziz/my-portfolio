@@ -151,15 +151,15 @@ icon: WhatsAppIcon,
     {
       icon: Github,
       name: 'GitHub',
-      username: '@rabiaAziz-dev',
-      link: 'https://github.com/rabiaAziz-dev',
+      username: '@swe-rabiaaziz',
+      link: 'https://github.com/swe-rabiaaziz',
       color: 'from-slate-800 to-slate-900 dark:from-slate-300 dark:to-slate-100'
     },
     {
       icon: Linkedin,
       name: 'LinkedIn',
-      username: '@rabiaaziz456',
-      link: 'https://www.linkedin.com/in/rabiaaziz456/',
+      username: '@swe-rabiaaziz',
+      link: 'https://www.linkedin.com/in/swe-rabiaaziz/',
       color: 'from-slate-700 to-slate-800 dark:from-slate-200 dark:to-slate-400'
     },
     {
