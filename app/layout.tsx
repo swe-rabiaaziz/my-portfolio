@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   description:
     'Portfolio of Rabia Aziz — Flutter Developer specializing in AI-powered mobile apps, Supabase backends, and cross-platform architecture.',
-  applicationName: 'Rabia Aziz Portfolio',
+  applicationName: 'Rabia Aziz',
   authors: [{ name: 'Rabia Aziz', url: 'https://swe-rabia-aziz.vercel.app' }],
   generator: 'Next.js',
   keywords: [
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://swe-rabia-aziz.vercel.app',
-    siteName: 'Rabia Aziz Portfolio',
+    siteName: 'Rabia Aziz',
     title: 'Rabia Aziz | Flutter Developer & Mobile App Engineer',
     description:
       'Cross-platform Flutter developer building AI mobile apps and Supabase backends across mobile, web, and desktop.',

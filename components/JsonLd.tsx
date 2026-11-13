@@ -5,8 +5,13 @@ export default function JsonLd() {
       {
         '@type': 'WebSite',
         '@id': 'https://swe-rabia-aziz.vercel.app/#website',
-        url: 'https://swe-rabia-aziz.vercel.app',
-        name: 'Rabia Aziz Portfolio',
+        url: 'https://swe-rabia-aziz.vercel.app/',
+        name: 'Rabia Aziz',
+        alternateName: [
+          'Rabia Aziz Portfolio',
+          'SWE Rabia Aziz',
+          'swe-rabia-aziz',
+        ],
         description:
           'Portfolio of Rabia Aziz — Cross-Platform Flutter Developer & Mobile App Engineer.',
         publisher: {

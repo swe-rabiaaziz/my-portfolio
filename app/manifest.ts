@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Rabia Aziz | Flutter Developer & Mobile App Engineer',
+    name: 'Rabia Aziz',
     short_name: 'Rabia Aziz',
     description:
       'Portfolio of Rabia Aziz — Cross-Platform Flutter Developer specializing in AI-powered mobile apps, Supabase & Firebase backends, and clean UI/UX architecture.',
