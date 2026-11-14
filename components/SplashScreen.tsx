@@ -3,6 +3,7 @@
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { isMobileDevice } from '@/lib/utils';
 
 /* â•â•â• PREMIUM KATANA SLASH EFFECT â•â•â•
    A real sword-cut reads as: a fast white bloom (the flash of impact), a thin
@@ -95,6 +96,13 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
+    // Skip splash screen immediately only on mobile devices (phones); keep on tablet & desktop
+    if (isMobileDevice()) {
+      onComplete();
+      setIsVisible(false);
+      return;
+    }
+
     const t1 = setTimeout(() => setPhase('slash1'), 600);
     const t2 = setTimeout(() => setPhase('slash2'), 1100);
     const t3 = setTimeout(() => setPhase('slash3'), 1600);
@@ -221,7 +229,7 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
         // Fade the entire splash wrapper to opacity:0 before unmounting
         // â€” home page renders underneath while this is still covering it
         <motion.div
-          className={`fixed inset-0 z-[9999] bg-black overflow-hidden pointer-events-none ${getShakeClass()}`}
+          className={`fixed inset-0 z-[9999] bg-black overflow-hidden pointer-events-none splash-screen-desktop-only ${getShakeClass()}`}
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.4, ease: 'easeInOut' } }}
           style={{ willChange: 'opacity, transform' }}
@@ -303,6 +311,17 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
           </motion.div>
 
           <style jsx>{`
+            /* Hide splash screen completely on mobile devices (phones), keeping it on tablet and desktop */
+            @media (max-width: 767px) {
+              .splash-screen-desktop-only {
+                display: none !important;
+              }
+            }
+            @media (max-height: 500px) and (max-width: 950px) and (pointer: coarse) {
+              .splash-screen-desktop-only {
+                display: none !important;
+              }
+            }
             @keyframes rumble {
               0%, 100% { transform: translate(0, 0); }
               50% { transform: translate(-2px, 2px); }

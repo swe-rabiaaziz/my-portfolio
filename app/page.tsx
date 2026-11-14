@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import FloatingElements from '@/components/FloatingElements';
 import SharedBackground from '@/components/SharedBackground';
@@ -16,9 +16,17 @@ import SplashScreen from '@/components/SplashScreen';
 import AIChatWidget from '@/components/AIChatWidget';
 import NarutoCursor from '@/components/CustomCursor';
 import BossArrivalShowcase from '@/components/ArrivalShowcase';
+import { isMobileDevice } from '@/lib/utils';
 
 export default function Home() {
   const [splashDone, setSplashDone] = useState(false);
+
+  // Skip splash screen immediately on mobile devices
+  useEffect(() => {
+    if (isMobileDevice()) {
+      setSplashDone(true);
+    }
+  }, []);
 
   // Stable callback — splash fires onComplete when sword has docked
   const handleSplashComplete = useCallback(() => {
