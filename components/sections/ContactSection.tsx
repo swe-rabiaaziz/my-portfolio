@@ -56,6 +56,18 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
+// Custom TikTok Icon Component
+const TikTokIcon = ({ className }: { className?: string }) => (
+  <svg 
+    viewBox="0 0 24 24" 
+    fill="currentColor" 
+    className={className}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.68 6.34 6.34 0 0 0 9.34 22a6.33 6.33 0 0 0 6.33-6.32V8.9a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.85-.33Z"/>
+  </svg>
+);
+
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -175,6 +187,13 @@ icon: WhatsAppIcon,
       username: '@swe.rabiaaziz',
       link: 'https://www.instagram.com/swe.rabiaaziz/',
       color: 'from-slate-600 to-slate-700 dark:from-slate-300 dark:to-slate-500'
+    },
+    {
+      icon: TikTokIcon,
+      name: 'TikTok',
+      username: '@swe.rabiaaziz',
+      link: 'https://www.tiktok.com/@swe.rabiaaziz',
+      color: 'from-slate-900 to-black dark:from-slate-100 dark:to-slate-300'
     },
     {
       icon: Calendar,

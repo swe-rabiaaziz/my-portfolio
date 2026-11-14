@@ -79,6 +79,7 @@ export default function JsonLd() {
           'https://github.com/swe-rabiaaziz',
           'https://www.linkedin.com/in/swe-rabiaaziz/',
           'https://www.instagram.com/swe.rabiaaziz/',
+          'https://www.tiktok.com/@swe.rabiaaziz',
           'https://www.facebook.com/swe.rabiaaziz',
           'https://wa.me/923275676026',
           'https://play.google.com/store/apps/details?id=com.us.citizenship.test.naturalization.civics.prep',

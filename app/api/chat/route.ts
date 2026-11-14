@@ -178,7 +178,7 @@ function getLocalFallbackResponse(
 
   if (query.includes('instagram') || query.includes('insta')) {
     return {
-      reply: "You can follow Rabia Aziz on Instagram: https://www.instagram.com/swe.rabiaaziz/ (@swe.rabiaaziz)!",
+      reply: "You can follow Rabia Aziz on Instagram: https://www.instagram.com/swe.rabiaaziz/ (@swe.rabiaaziz) and TikTok: https://www.tiktok.com/@swe.rabiaaziz (@swe.rabiaaziz)!",
       functionCalls: null,
     };
   }
