@@ -69,7 +69,7 @@ interface Project {
 const projects: Project[] = [
   {
     title: 'CivicCoach — AI US Citizenship 2026',
-    shortTitle: 'CivicCoach',
+    shortTitle: 'AI US Citizenship Test',
     desc: 'AI-powered Flutter application for USCIS civics prep featuring oral AI mock interviews, 128 official questions with spaced-repetition, ZIP-based elected officials lookup, and bilingual study modes.',
     tags: [
       'Flutter',
@@ -202,10 +202,10 @@ export default function ProjectsSection() {
         setActiveModal((prev) =>
           prev
             ? {
-                ...prev,
-                currentIndex: (prev.currentIndex - 1 + slides.length) % slides.length,
-                direction: -1,
-              }
+              ...prev,
+              currentIndex: (prev.currentIndex - 1 + slides.length) % slides.length,
+              direction: -1,
+            }
             : null
         );
       } else if (e.key === 'ArrowRight') {
@@ -213,10 +213,10 @@ export default function ProjectsSection() {
         setActiveModal((prev) =>
           prev
             ? {
-                ...prev,
-                currentIndex: (prev.currentIndex + 1) % slides.length,
-                direction: 1,
-              }
+              ...prev,
+              currentIndex: (prev.currentIndex + 1) % slides.length,
+              direction: 1,
+            }
             : null
         );
       }
@@ -507,10 +507,10 @@ export default function ProjectsSection() {
             setActiveModal((prev) =>
               prev
                 ? {
-                    ...prev,
-                    currentIndex: (prev.currentIndex + 1) % slides.length,
-                    direction: 1,
-                  }
+                  ...prev,
+                  currentIndex: (prev.currentIndex + 1) % slides.length,
+                  direction: 1,
+                }
                 : null
             );
           };
@@ -519,10 +519,10 @@ export default function ProjectsSection() {
             setActiveModal((prev) =>
               prev
                 ? {
-                    ...prev,
-                    currentIndex: (prev.currentIndex - 1 + slides.length) % slides.length,
-                    direction: -1,
-                  }
+                  ...prev,
+                  currentIndex: (prev.currentIndex - 1 + slides.length) % slides.length,
+                  direction: -1,
+                }
                 : null
             );
           };
@@ -546,9 +546,8 @@ export default function ProjectsSection() {
             >
               <motion.div
                 key="app-showcase-dialog"
-                className={`relative w-full ${
-                  isShowcase ? 'max-w-2xl sm:max-w-3xl' : 'max-w-[380px] sm:max-w-[420px]'
-                } h-[92vh] max-h-[920px] rounded-3xl p-3 sm:p-4 bg-white/95 dark:bg-slate-900/95 text-slate-900 dark:text-slate-100 border border-slate-200/80 dark:border-white/10 shadow-2xl flex flex-col overflow-hidden transition-all duration-300 ease-out`}
+                className={`relative w-full ${isShowcase ? 'max-w-2xl sm:max-w-3xl' : 'max-w-[380px] sm:max-w-[420px]'
+                  } h-[92vh] max-h-[920px] rounded-3xl p-3 sm:p-4 bg-white/95 dark:bg-slate-900/95 text-slate-900 dark:text-slate-100 border border-slate-200/80 dark:border-white/10 shadow-2xl flex flex-col overflow-hidden transition-all duration-300 ease-out`}
                 initial={{ scale: 0.95, opacity: 0, y: 15 }}
                 animate={{ scale: 1, opacity: 1, y: 0 }}
                 exit={{ scale: 0.95, opacity: 0, y: 15 }}
@@ -579,11 +578,10 @@ export default function ProjectsSection() {
                     <button
                       type="button"
                       onClick={() => handleSelectSlide(0)}
-                      className={`px-2 py-1 rounded-lg text-[10px] sm:text-[11px] font-bold transition-all flex items-center gap-1 ${
-                        isShowcase
+                      className={`px-2 py-1 rounded-lg text-[10px] sm:text-[11px] font-bold transition-all flex items-center gap-1 ${isShowcase
                           ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-950 shadow-sm'
                           : 'text-slate-600 hover:text-slate-950 dark:text-slate-400 dark:hover:text-white'
-                      }`}
+                        }`}
                     >
                       <Sparkles className="w-3 h-3" />
                       <span>Showcase</span>
@@ -596,11 +594,10 @@ export default function ProjectsSection() {
                           activeModal.currentIndex === 0 ? 1 : activeModal.currentIndex
                         )
                       }
-                      className={`px-2 py-1 rounded-lg text-[10px] sm:text-[11px] font-bold transition-all flex items-center gap-1 ${
-                        !isShowcase
+                      className={`px-2 py-1 rounded-lg text-[10px] sm:text-[11px] font-bold transition-all flex items-center gap-1 ${!isShowcase
                           ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-950 shadow-sm'
                           : 'text-slate-600 hover:text-slate-950 dark:text-slate-400 dark:hover:text-white'
-                      }`}
+                        }`}
                     >
                       <Smartphone className="w-3 h-3" />
                       <span>Screens ({screenshotCount})</span>
@@ -720,15 +717,13 @@ export default function ProjectsSection() {
                           data-thumb-index={idx}
                           type="button"
                           onClick={() => handleSelectSlide(idx)}
-                          className={`relative rounded-md overflow-hidden border transition-all flex-shrink-0 group ${
-                            isThumbShowcase
+                          className={`relative rounded-md overflow-hidden border transition-all flex-shrink-0 group ${isThumbShowcase
                               ? 'h-8 w-11 sm:h-9 sm:w-13'
                               : 'h-8 w-5 sm:h-9 sm:w-6'
-                          } ${
-                            isActive
+                            } ${isActive
                               ? 'border-slate-900 dark:border-white scale-105 shadow-sm ring-1 ring-slate-900/30 dark:ring-white/40 opacity-100 z-10'
                               : 'border-slate-300 dark:border-white/15 opacity-55 hover:opacity-100 hover:border-slate-400 dark:hover:border-white/40'
-                          }`}
+                            }`}
                           aria-label={`Jump to ${slide.title}`}
                         >
                           <img
@@ -738,11 +733,10 @@ export default function ProjectsSection() {
                           />
                           {/* Badge */}
                           <div
-                            className={`absolute inset-x-0 bottom-0 py-[1px] text-center text-[6px] sm:text-[7px] font-black tracking-tight leading-none ${
-                              isActive
+                            className={`absolute inset-x-0 bottom-0 py-[1px] text-center text-[6px] sm:text-[7px] font-black tracking-tight leading-none ${isActive
                                 ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-950 font-black'
                                 : 'bg-black/60 text-white group-hover:bg-black/80'
-                            }`}
+                              }`}
                           >
                             {isThumbShowcase ? 'SHOW' : `#${idx}`}
                           </div>
