@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="676" viewBox="0 0 1000 676" role="img" aria-label="What I build: AI and voice mobile apps, cross-platform Flutter apps, tactile neumorphic UI at 120 FPS, cloud and offline-first systems, and feature-first clean architecture" xmlns:c2pa="http://c2pa.org/manifest">
+<defs>
+<linearGradient id="plate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e0e0e"/><stop offset="1" stop-color="#070707"/></linearGradient>
+<linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171717"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient>
+<linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#8c8c8c"/></linearGradient>
+<linearGradient id="borderSweep" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#525252"/><stop offset="0.5" stop-color="#ffffff"/><stop offset="1" stop-color="#525252"/></linearGradient>
+<linearGradient id="hl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.4"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="rule" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0.16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="glider" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="shineG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.07"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="scanG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="0.9"/></linearGradient>
+<linearGradient id="fadeL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#070707"/><stop offset="1" stop-color="#070707" stop-opacity="0"/></linearGradient>
+<linearGradient id="fadeR" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#070707" stop-opacity="0"/><stop offset="1" stop-color="#070707"/></linearGradient>
+<radialGradient id="glowW" cx="1" cy="0" r="0.9"><stop offset="0" stop-color="#fff" stop-opacity="0.075"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<radialGradient id="orb" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.07"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<radialGradient id="btnG" cx="0.35" cy="0.3" r="0.9"><stop offset="0" stop-color="#2c2c2c"/><stop offset="1" stop-color="#121212"/></radialGradient>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#fff" fill-opacity="0.05"/></pattern>
+<filter id="neuShadow" x="-10%" y="-10%" width="120%" height="125%">
+  <feDropShadow dx="3" dy="5" stdDeviation="7" flood-color="#000" flood-opacity="0.65"/>
+  <feDropShadow dx="-1" dy="-1" stdDeviation="4" flood-color="#fff" flood-opacity="0.025"/>
+</filter>
+<filter id="btnShadow" x="-40%" y="-40%" width="180%" height="180%">
+  <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.8"/>
+  <feDropShadow dx="-1.5" dy="-1.5" stdDeviation="2" flood-color="#fff" flood-opacity="0.07"/>
+</filter>
+<clipPath id="plateClip"><rect width="1000" height="676" rx="28"/></clipPath>
+<clipPath id="clipS"><rect width="307" height="242" rx="20"/></clipPath>
+<clipPath id="clipL"><rect width="469" height="242" rx="20"/></clipPath>
+<linearGradient id="maskG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000"/><stop offset="0.08" stop-color="#fff"/><stop offset="0.92" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>
+<mask id="tickMask" maskUnits="userSpaceOnUse" x="24" y="636" width="952" height="26"><rect x="24" y="636" width="952" height="26" fill="url(#maskG)"/></mask>
+<clipPath id="tickClip"><rect x="24" y="636" width="952" height="26"/></clipPath>
+</defs>
+<style>
+.idx { font: 700 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 2px; fill: #737373; }
+.ttl { font: 800 17px 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; fill: #fafafa; letter-spacing: -0.2px; }
+.dsc { font: 400 12.5px 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; fill: #a3a3a3; }
+.chip { font: 500 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #b4b4b4; }
+.mono { font: 500 9.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #d4d4d4; }
+.h1 { font: 800 32px 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; letter-spacing: -1px; fill: url(#titleGrad); }
+.sub { font: 400 13px 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; fill: #737373; }
+.big { font: 800 30px 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; letter-spacing: -1px; fill: #fafafa; }
+.tick-txt { font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #737373; }
+
+.rise  { animation: rise 0.9s cubic-bezier(.2,.8,.2,1) both; }
+.sweep { stroke-dasharray: 120 880; animation: sweep 8s linear infinite; }
+.shine { animation: shine 9s ease-in-out infinite; }
+.bar   { transform-box: fill-box; transform-origin: center; animation: bar 1.4s ease-in-out infinite; }
+.scan  { animation: scan 4.5s linear infinite; }
+.dev   { animation: dev 4.8s ease-in-out infinite; }
+.travel{ animation: travel 4.8s linear infinite; }
+.wave  { animation: wave 1.9s ease-in-out infinite; }
+.press { transform-box: fill-box; transform-origin: center; animation: press 2.8s cubic-bezier(.34,1.56,.64,1) infinite; }
+.ring  { transform-box: fill-box; transform-origin: center; animation: ring 2.8s ease-out infinite; }
+.flowf { animation: flowf 1.2s linear infinite; }
+.flowb { animation: flowb 1.2s linear infinite; }
+.net   { animation: net 8s ease-in-out infinite; }
+.ta    { animation: ta 8s ease-in-out infinite; }
+.tb    { animation: tb 8s ease-in-out infinite; }
+.pkt   { animation: pkt 6s linear infinite; }
+.lit   { animation: lit 6s ease-in-out infinite; }
+.pulse { transform-box: fill-box; transform-origin: center; animation: pulse 2.4s ease-in-out infinite; }
+.drift { animation: drift 18s ease-in-out infinite alternate; }
+.glide { animation: glide 6s ease-in-out infinite; }
+.ticker{ animation: ticker 32s linear infinite; }
+
+@keyframes rise   { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@keyframes sweep  { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+@keyframes shine  { 0% { transform: translateX(0); } 30%,100% { transform: translateX(660px); } }
+@keyframes bar    { 0%,100% { transform: scaleY(.3); } 50% { transform: scaleY(1); } }
+@keyframes scan   { from { transform: translateX(0); } to { transform: translateX(254px); } }
+@keyframes dev    { 0%,100% { stroke-opacity: .28; fill-opacity: 0; } 8%,26% { stroke-opacity: 1; fill-opacity: .12; } 36% { stroke-opacity: .28; fill-opacity: 0; } }
+@keyframes travel { 0% { transform: translateX(0); opacity: 0; } 6% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translateX(190px); opacity: 0; } }
+@keyframes wave   { 0%,100% { opacity: .22; } 50% { opacity: 1; } }
+@keyframes press  { 0%,50%,100% { transform: scale(1); } 60% { transform: scale(.82); } 78% { transform: scale(1.1); } }
+@keyframes ring   { 0% { transform: scale(.7); opacity: .7; } 100% { transform: scale(1.8); opacity: 0; } }
+@keyframes flowf  { to { stroke-dashoffset: -24; } }
+@keyframes flowb  { to { stroke-dashoffset: 24; } }
+@keyframes net    { 0%,42% { opacity: 1; } 52%,90% { opacity: .1; } 100% { opacity: 1; } }
+@keyframes ta     { 0%,42% { opacity: 1; } 50%,92% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes tb     { 0%,42% { opacity: 0; } 52%,90% { opacity: 1; } 98%,100% { opacity: 0; } }
+@keyframes pkt    { 0% { transform: translateX(0); opacity: 0; } 5% { transform: translateX(0); opacity: 1; } 70% { transform: translateX(296px); opacity: 1; } 78%,100% { transform: translateX(296px); opacity: 0; } }
+@keyframes lit    { 0%,100% { stroke-opacity: .28; fill-opacity: 0; } 4%,16% { stroke-opacity: 1; fill-opacity: .12; } 26% { stroke-opacity: .28; fill-opacity: 0; } }
+@keyframes pulse  { 0%,100% { transform: scale(1); opacity: .95; } 50% { transform: scale(1.5); opacity: .45; } }
+@keyframes drift  { to { transform: translate(60px, 36px); } }
+@keyframes glide  { from { transform: translateX(-200px); } to { transform: translateX(1000px); } }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-1180px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise,.sweep,.shine,.bar,.scan,.dev,.travel,.wave,.press,.ring,.flowf,.flowb,.net,.ta,.tb,.pkt,.lit,.pulse,.drift,.glide,.ticker { animation: none; }
+}
+</style>
+
+<rect width="1000" height="676" rx="28" fill="url(#plate)"/>
+<g clip-path="url(#plateClip)">
+  <rect width="1000" height="676" fill="url(#dots)"/>
+  <g class="drift"><circle cx="140" cy="60" r="300" fill="url(#orb)"/></g>
+  <g class="drift" style="animation-direction:alternate-reverse"><circle cx="880" cy="620" r="320" fill="url(#orb)"/></g>
+</g>
+<rect x="0.5" y="0.5" width="999" height="675" rx="27.5" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+
+<g class="rise">
+  <text class="h1" x="24" y="56">What I build</text>
+  <text class="sub" x="24" y="78">Mobile apps that feel native, respond instantly, and scale cleanly.</text>
+  <g><rect x="840" y="34" width="136" height="28" rx="14" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.12"/>
+  <circle class="pulse" cx="858" cy="48" r="3" fill="#fafafa"/><text class="mono" x="871" y="52">Flutter · Dart</text></g>
+  <rect x="24" y="92" width="952" height="1" fill="url(#rule)"/>
+  <g clip-path="url(#plateClip)"><rect class="glide" x="24" y="91.5" width="180" height="2" rx="1" fill="url(#glider)"/></g>
+</g>
+
+<g transform="translate(24,106)">
+<g class="rise" style="animation-delay:0.15s" filter="url(#neuShadow)">
+  <rect x="0.5" y="0.5" width="306" height="242" rx="20" fill="url(#cardBg)" stroke="#262626"/>
+  <rect x="0.5" y="0.5" width="306" height="242" rx="20" fill="url(#glowW)"/>
+  <rect x="22" y="0.5" width="262" height="1" fill="url(#hl)"/>
+  <g clip-path="url(#clipS)"><g class="shine" style="animation-delay:1.0s"><rect x="-140" y="-20" width="90" height="282" fill="url(#shineG)" transform="skewX(-20)"/></g></g>
+  <rect x="14" y="14" width="278" height="68" rx="14" fill="#fff" fill-opacity="0.03" stroke="#fff" stroke-opacity="0.08"/>
+  <g transform="translate(14,14)"><rect class="bar" x="12.0" y="30.0" width="3" height="8" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-0.00s"/><rect class="bar" x="19.6" y="20.9" width="3" height="26.3" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-0.09s"/><rect class="bar" x="27.2" y="14.1" width="3" height="39.9" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-0.18s"/><rect class="bar" x="34.8" y="12.1" width="3" height="43.9" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-0.27s"/><rect class="bar" x="42.4" y="15.7" width="3" height="36.6" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-0.36s"/><rect class="bar" x="50.0" y="23.5" width="3" height="21.0" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-0.45s"/><rect class="bar" x="57.6" y="27.4" width="3" height="13.1" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-0.54s"/><rect class="bar" x="65.2" y="20.3" width="3" height="27.4" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-0.63s"/><rect class="bar" x="72.8" y="17.1" width="3" height="33.7" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-0.72s"/><rect class="bar" x="80.4" y="18.4" width="3" height="31.2" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-0.81s"/><rect class="bar" x="88.0" y="22.8" width="3" height="22.4" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-0.90s"/><rect class="bar" x="95.6" y="28.1" width="3" height="11.9" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-0.99s"/><rect class="bar" x="103.2" y="27.9" width="3" height="12.3" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-1.08s"/><rect class="bar" x="110.8" y="25.9" width="3" height="16.2" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-1.17s"/><rect class="bar" x="118.4" y="25.9" width="3" height="16.1" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-1.26s"/><rect class="bar" x="126.0" y="27.2" width="3" height="13.6" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-1.35s"/><rect class="bar" x="133.6" y="28.6" width="3" height="10.7" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-1.44s"/><rect class="bar" x="141.2" y="29.9" width="3" height="8.3" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-1.53s"/><rect class="bar" x="148.8" y="29.1" width="3" height="9.7" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-1.62s"/><rect class="bar" x="156.4" y="28.2" width="3" height="11.6" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-1.71s"/><rect class="bar" x="164.0" y="27.2" width="3" height="13.5" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-1.80s"/><rect class="bar" x="171.6" y="26.9" width="3" height="14.3" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-1.89s"/><rect class="bar" x="179.2" y="27.8" width="3" height="12.4" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-1.98s"/><rect class="bar" x="186.8" y="29.4" width="3" height="9.1" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-2.07s"/><rect class="bar" x="194.4" y="25.3" width="3" height="17.4" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-2.16s"/><rect class="bar" x="202.0" y="21.1" width="3" height="25.8" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-2.25s"/><rect class="bar" x="209.6" y="18.9" width="3" height="30.3" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-2.34s"/><rect class="bar" x="217.2" y="20.2" width="3" height="27.6" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-2.43s"/><rect class="bar" x="224.8" y="25.6" width="3" height="16.8" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-2.52s"/><rect class="bar" x="232.4" y="26.2" width="3" height="15.5" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-2.61s"/><rect class="bar" x="240.0" y="18.1" width="3" height="31.9" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-2.70s"/><rect class="bar" x="247.6" y="12.9" width="3" height="42.1" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-2.79s"/><rect class="bar" x="255.2" y="13.0" width="3" height="42.0" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-2.88s"/><rect class="bar" x="262.8" y="18.4" width="3" height="31.1" rx="1.5" fill="#fafafa" fill-opacity="0.85" style="animation-delay:-2.97s"/><g class="scan"><rect x="12" y="6" width="22" height="56" fill="url(#scanG)" fill-opacity="0.25"/><rect x="33" y="6" width="1.5" height="56" fill="#fff"/></g></g>
+  <rect class="sweep" x="0.5" y="0.5" width="306" height="242" rx="20" fill="none" stroke="url(#borderSweep)" stroke-opacity="0.85" stroke-width="1.3" pathLength="1000" stroke-linecap="round" style="animation-delay:-0s"/>
+  <text class="idx" x="22" y="108">01 · AI &amp; VOICE</text>
+  <text class="ttl" x="22" y="132">AI Voice &amp; Smart Apps</text>
+  <text class="dsc" x="22" y="156">Oral mock interviews, on-device</text>
+  <text class="dsc" x="22" y="174">Speech-to-Text, STT evaluation,</text>
+  <text class="dsc" x="22" y="192">and streaming Groq/Gemini APIs.</text>
+  <rect x="22" y="202" width="44" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="44.0" y="217" text-anchor="middle">Groq</text><rect x="72" y="202" width="57" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="100.5" y="217" text-anchor="middle">Gemini</text><rect x="135" y="202" width="99" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="184.5" y="217" text-anchor="middle">On-device STT</text>
+</g></g>
+<g transform="translate(347,106)">
+<g class="rise" style="animation-delay:0.3s" filter="url(#neuShadow)">
+  <rect x="0.5" y="0.5" width="306" height="242" rx="20" fill="url(#cardBg)" stroke="#262626"/>
+  <rect x="0.5" y="0.5" width="306" height="242" rx="20" fill="url(#glowW)"/>
+  <rect x="22" y="0.5" width="262" height="1" fill="url(#hl)"/>
+  <g clip-path="url(#clipS)"><g class="shine" style="animation-delay:1.8s"><rect x="-140" y="-20" width="90" height="282" fill="url(#shineG)" transform="skewX(-20)"/></g></g>
+  <rect x="14" y="14" width="278" height="68" rx="14" fill="#fff" fill-opacity="0.03" stroke="#fff" stroke-opacity="0.08"/>
+  <g transform="translate(14,14)"><line x1="72" y1="34" x2="262" y2="34" stroke="#fff" stroke-opacity="0.18" stroke-dasharray="3 4"/><rect x="10" y="24" width="62" height="20" rx="10" fill="#0e0e0e" stroke="#fff" stroke-opacity="0.3"/><text class="mono" x="41" y="37.5" text-anchor="middle">main.dart</text><rect class="dev" x="106" y="17" width="18" height="34" rx="5" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.4" style="animation-delay:0s"/><rect class="dev" x="140" y="21" width="30" height="26" rx="4" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.4" style="animation-delay:1.2s"/><rect class="dev" x="186" y="17" width="40" height="26" rx="3" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.4" style="animation-delay:2.4s"/><path d="M206 43V50M198 50H214" stroke="#fafafa" stroke-opacity="0.45" stroke-width="1.4" fill="none"/><rect class="dev" x="236" y="20" width="34" height="28" rx="4" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.4" style="animation-delay:3.6s"/><circle cx="242" cy="26" r="1.2" fill="#fafafa" fill-opacity="0.6"/><circle cx="247" cy="26" r="1.2" fill="#fafafa" fill-opacity="0.6"/><circle cx="252" cy="26" r="1.2" fill="#fafafa" fill-opacity="0.6"/><g class="travel"><circle cx="72" cy="34" r="2.6" fill="#fff"/></g></g>
+  <rect class="sweep" x="0.5" y="0.5" width="306" height="242" rx="20" fill="none" stroke="url(#borderSweep)" stroke-opacity="0.85" stroke-width="1.3" pathLength="1000" stroke-linecap="round" style="animation-delay:-2.6s"/>
+  <text class="idx" x="22" y="108">02 · FLUTTER ENGINE</text>
+  <text class="ttl" x="22" y="132">Cross-Platform Apps</text>
+  <text class="dsc" x="22" y="156">Single Dart codebase shipping</text>
+  <text class="dsc" x="22" y="174">to Android, iOS, Web &amp; Desktop</text>
+  <text class="dsc" x="22" y="192">with native performance.</text>
+  <rect x="22" y="202" width="44" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="44.0" y="217" text-anchor="middle">Dart</text><rect x="72" y="202" width="63" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="103.5" y="217" text-anchor="middle">Android</text><rect x="141" y="202" width="38" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="160.0" y="217" text-anchor="middle">iOS</text><rect x="185" y="202" width="38" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="204.0" y="217" text-anchor="middle">Web</text>
+</g></g>
+<g transform="translate(670,106)">
+<g class="rise" style="animation-delay:0.45s" filter="url(#neuShadow)">
+  <rect x="0.5" y="0.5" width="306" height="242" rx="20" fill="url(#cardBg)" stroke="#262626"/>
+  <rect x="0.5" y="0.5" width="306" height="242" rx="20" fill="url(#glowW)"/>
+  <rect x="22" y="0.5" width="262" height="1" fill="url(#hl)"/>
+  <g clip-path="url(#clipS)"><g class="shine" style="animation-delay:2.6s"><rect x="-140" y="-20" width="90" height="282" fill="url(#shineG)" transform="skewX(-20)"/></g></g>
+  <rect x="14" y="14" width="278" height="68" rx="14" fill="#fff" fill-opacity="0.03" stroke="#fff" stroke-opacity="0.08"/>
+  <g transform="translate(14,14)"><text class="big" x="16" y="43">120</text><text class="mono" x="17" y="58" style="fill:#737373;letter-spacing:2px">FPS</text><rect class="wave" x="86" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-0.00s"/><rect class="wave" x="95" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-0.12s"/><rect class="wave" x="104" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-0.24s"/><rect class="wave" x="113" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-0.36s"/><rect class="wave" x="122" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-0.48s"/><rect class="wave" x="131" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-0.60s"/><rect class="wave" x="140" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-0.72s"/><rect class="wave" x="149" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-0.84s"/><rect class="wave" x="158" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-0.96s"/><rect class="wave" x="167" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-1.08s"/><rect class="wave" x="176" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-1.20s"/><rect class="wave" x="185" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-1.32s"/><rect class="wave" x="194" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-1.44s"/><rect class="wave" x="203" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-1.56s"/><rect class="wave" x="212" y="19" width="4" height="30" rx="2" fill="#fafafa" style="animation-delay:-1.68s"/><circle class="ring" cx="244" cy="34" r="16" fill="none" stroke="#fff" stroke-width="1"/><circle cx="244" cy="34" r="22" fill="url(#btnG)" stroke="#fff" stroke-opacity="0.09" filter="url(#btnShadow)"/><circle class="press" cx="244" cy="34" r="11" fill="#0e0e0e" stroke="#fafafa" stroke-opacity="0.55"/><circle cx="244" cy="34" r="2.6" fill="#fafafa"/></g>
+  <rect class="sweep" x="0.5" y="0.5" width="306" height="242" rx="20" fill="none" stroke="url(#borderSweep)" stroke-opacity="0.85" stroke-width="1.3" pathLength="1000" stroke-linecap="round" style="animation-delay:-5.2s"/>
+  <text class="idx" x="22" y="108">03 · UI CRAFTSMANSHIP</text>
+  <text class="ttl" x="22" y="132">Tactile UI &amp; 120 FPS</text>
+  <text class="dsc" x="22" y="156">Neumorphism, spring damping,</text>
+  <text class="dsc" x="22" y="174">haptic feedback &amp; Impeller-powered</text>
+  <text class="dsc" x="22" y="192">zero-jank micro-interactions.</text>
+  <rect x="22" y="202" width="87" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="65.5" y="217" text-anchor="middle">Neumorphism</text><rect x="115" y="202" width="69" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="149.5" y="217" text-anchor="middle">Impeller</text><rect x="190" y="202" width="63" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="221.5" y="217" text-anchor="middle">Haptics</text>
+</g></g>
+<g transform="translate(24,364)">
+<g class="rise" style="animation-delay:0.6s" filter="url(#neuShadow)">
+  <rect x="0.5" y="0.5" width="468" height="242" rx="20" fill="url(#cardBg)" stroke="#262626"/>
+  <rect x="0.5" y="0.5" width="468" height="242" rx="20" fill="url(#glowW)"/>
+  <rect x="24" y="0.5" width="420" height="1" fill="url(#hl)"/>
+  <g clip-path="url(#clipL)"><g class="shine" style="animation-delay:3.4s"><rect x="-140" y="-20" width="90" height="282" fill="url(#shineG)" transform="skewX(-20)"/></g></g>
+  <rect x="14" y="14" width="440" height="68" rx="14" fill="#fff" fill-opacity="0.03" stroke="#fff" stroke-opacity="0.08"/>
+  <g transform="translate(14,14)"><rect x="16" y="16" width="118" height="36" rx="10" fill="#0e0e0e" stroke="#fff" stroke-opacity="0.3"/><text class="mono" x="75" y="38" text-anchor="middle">Local · SQLite</text><g class="net"><rect x="306" y="16" width="118" height="36" rx="10" fill="#0e0e0e" stroke="#fff" stroke-opacity="0.3"/><text class="mono" x="365" y="38" text-anchor="middle">Cloud · Supabase</text><line class="flowf" x1="142" y1="24" x2="298" y2="24" stroke="#fafafa" stroke-width="1.4" stroke-dasharray="6 6"/><line class="flowb" x1="142" y1="44" x2="298" y2="44" stroke="#a3a3a3" stroke-width="1.4" stroke-dasharray="6 6"/></g><text class="mono ta" x="220" y="38" text-anchor="middle">sync</text><text class="mono tb" x="220" y="38" text-anchor="middle" style="fill:#fafafa">offline · still works</text></g>
+  <rect class="sweep" x="0.5" y="0.5" width="468" height="242" rx="20" fill="none" stroke="url(#borderSweep)" stroke-opacity="0.85" stroke-width="1.3" pathLength="1000" stroke-linecap="round" style="animation-delay:-1.4s"/>
+  <text class="idx" x="24" y="108">04 · CLOUD &amp; PERSISTENCE</text>
+  <text class="ttl" x="24" y="132">Cloud &amp; Offline-First Systems</text>
+  <text class="dsc" x="24" y="156">Supabase (PostgreSQL, Auth, RLS, Storage) &amp; Firebase,</text>
+  <text class="dsc" x="24" y="174">combined with reactive Drift ORM and SQLite local databases</text>
+  <text class="dsc" x="24" y="192">so the application is always responsive offline.</text>
+  <rect x="24" y="202" width="69" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="58.5" y="217" text-anchor="middle">Supabase</text><rect x="99" y="202" width="69" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="133.5" y="217" text-anchor="middle">Firebase</text><rect x="174" y="202" width="50" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="199.0" y="217" text-anchor="middle">Drift</text><rect x="230" y="202" width="57" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="258.5" y="217" text-anchor="middle">SQLite</text><rect x="293" y="202" width="38" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="312.0" y="217" text-anchor="middle">RLS</text><rect x="337" y="202" width="81" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="377.5" y="217" text-anchor="middle">PostgreSQL</text>
+</g></g>
+<g transform="translate(508,364)">
+<g class="rise" style="animation-delay:0.75s" filter="url(#neuShadow)">
+  <rect x="0.5" y="0.5" width="468" height="242" rx="20" fill="url(#cardBg)" stroke="#262626"/>
+  <rect x="0.5" y="0.5" width="468" height="242" rx="20" fill="url(#glowW)"/>
+  <rect x="24" y="0.5" width="420" height="1" fill="url(#hl)"/>
+  <g clip-path="url(#clipL)"><g class="shine" style="animation-delay:4.2s"><rect x="-140" y="-20" width="90" height="282" fill="url(#shineG)" transform="skewX(-20)"/></g></g>
+  <rect x="14" y="14" width="440" height="68" rx="14" fill="#fff" fill-opacity="0.03" stroke="#fff" stroke-opacity="0.08"/>
+  <g transform="translate(14,14)"><line x1="130" y1="34" x2="162" y2="34" stroke="#fff" stroke-opacity="0.25" stroke-dasharray="3 4"/><line x1="278" y1="34" x2="310" y2="34" stroke="#fff" stroke-opacity="0.25" stroke-dasharray="3 4"/><rect class="lit" x="18" y="16" width="108" height="36" rx="10" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.3" style="animation-delay:0s"/><text class="mono" x="72" y="38" text-anchor="middle">Presentation</text><rect class="lit" x="166" y="16" width="108" height="36" rx="10" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.3" style="animation-delay:1.7s"/><text class="mono" x="220" y="38" text-anchor="middle">Domain</text><rect class="lit" x="314" y="16" width="108" height="36" rx="10" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.3" style="animation-delay:3.66s"/><text class="mono" x="368" y="38" text-anchor="middle">Data</text><g class="pkt"><circle cx="72" cy="34" r="3" fill="#fff"/><circle cx="72" cy="34" r="6" fill="#fff" fill-opacity="0.15"/></g></g>
+  <rect class="sweep" x="0.5" y="0.5" width="468" height="242" rx="20" fill="none" stroke="url(#borderSweep)" stroke-opacity="0.85" stroke-width="1.3" pathLength="1000" stroke-linecap="round" style="animation-delay:-4.1s"/>
+  <text class="idx" x="24" y="108">05 · ARCHITECTURE</text>
+  <text class="ttl" x="24" y="132">Feature-First Clean Architecture</text>
+  <text class="dsc" x="24" y="156">Decoupled presentation, domain and data layers.</text>
+  <text class="dsc" x="24" y="174">Predictable state management with BLoC / Cubit and Provider</text>
+  <text class="dsc" x="24" y="192">that scales smoothly across complex codebases.</text>
+  <rect x="24" y="202" width="44" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="46.0" y="217" text-anchor="middle">BLoC</text><rect x="74" y="202" width="50" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="99.0" y="217" text-anchor="middle">Cubit</text><rect x="130" y="202" width="69" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="164.5" y="217" text-anchor="middle">Provider</text><rect x="205" y="202" width="81" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="245.5" y="217" text-anchor="middle">Clean Arch</text>
+</g></g>
+
+<rect x="24" y="628" width="952" height="1" fill="url(#rule)"/>
+<g clip-path="url(#tickClip)"><g mask="url(#tickMask)"><g class="ticker">
+  <text class="tick-txt" x="24" y="654" textLength="1180" lengthAdjust="spacing" xml:space="preserve">Smooth at 120 FPS  •  Offline-first by default  •  Clean, testable architecture  •  Voice &amp; AI on-device  •  One codebase, every screen  •  </text>
+  <text class="tick-txt" x="1204" y="654" textLength="1180" lengthAdjust="spacing" xml:space="preserve">Smooth at 120 FPS  •  Offline-first by default  •  Clean, testable architecture  •  Voice &amp; AI on-device  •  One codebase, every screen  •  </text>
+</g></g></g>
+</svg>

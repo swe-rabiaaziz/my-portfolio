@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="256" viewBox="0 0 1000 256" role="img" aria-label="Rabia Aziz's tech stack as a pipeline: Interface (Flutter, Dart, Impeller, Figma), State (BLoC, Provider, Clean Architecture), Data (Drift, SQLite, Supabase, Firebase), Intelligence (Groq, Gemini, ML Kit, Speech-to-Text), Shipped (CivicCoach AI, Zemen, ZenPeace, Health Tracker)." xmlns:c2pa="http://c2pa.org/manifest">
+<defs>
+  <clipPath id="cl"><rect width="1000" height="256" rx="22"/></clipPath>
+  <radialGradient id="bg" cx="50%" cy="0%" r="90%"><stop offset="0" stop-color="#1a1a1a"/><stop offset=".55" stop-color="#0d0d0d"/><stop offset="1" stop-color="#080808"/></radialGradient>
+  <linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".09"/><stop offset="1" stop-color="#fff" stop-opacity=".015"/></linearGradient>
+  <linearGradient id="tr" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".9"/></linearGradient>
+  <linearGradient id="hr" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="gl" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="3" result="a"/><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="a"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<style>
+  .s{font:600 22px Georgia,'Times New Roman',serif;fill:#7d7d7d;letter-spacing:.2px}
+  .k{font:500 11.5px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#666}
+  .i{font:600 10px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#555}
+  .cap{font:italic 400 13px Georgia,'Times New Roman',serif;fill:#7d7d7d}
+  .a{animation-duration:10s;animation-iteration-count:infinite;animation-delay:var(--dl);animation-fill-mode:both;animation-timing-function:ease-in-out}
+  .pn{opacity:0;animation-name:pn}.ttl{animation-name:tt}.tk{animation-name:tk}
+  .nd{fill:#161616;stroke:#555;stroke-width:1.2;animation-name:nd;transform-box:fill-box;transform-origin:center}
+  .hl{opacity:0;fill:none;stroke:#fff;animation-name:hl;transform-box:fill-box;transform-origin:center}
+  .pk{animation:pk 10s infinite both;animation-timing-function:cubic-bezier(.65,0,.3,1)}
+  @keyframes pn{0%{opacity:0}6%,26%{opacity:1}40%,100%{opacity:0}}
+  @keyframes tt{0%{fill:#7d7d7d}6%,26%{fill:#fff}40%,100%{fill:#7d7d7d}}
+  @keyframes tk{0%{fill:#666}8%,26%{fill:#f2f2f2}40%,100%{fill:#666}}
+  @keyframes nd{0%{fill:#161616;transform:scale(1)}5%,26%{fill:#fff;transform:scale(1.4)}40%,100%{fill:#161616;transform:scale(1)}}
+  @keyframes hl{0%{opacity:0;transform:scale(.5)}6%{opacity:.6;transform:scale(1)}30%,100%{opacity:0;transform:scale(2.4)}}
+  @keyframes pk{0%{opacity:0;transform:translate(52px,58px)}1%{opacity:1}3%{transform:translate(52px,58px)}20%,23%{transform:translate(239px,58px)}40%,43%{transform:translate(426px,58px)}60%,63%{transform:translate(613px,58px)}80%,83%{transform:translate(800px,58px)}96%{opacity:1;transform:translate(956px,58px)}99%,100%{opacity:0;transform:translate(956px,58px)}}
+  @keyframes sh{0%{transform:translateX(-200px)}100%{transform:translateX(1200px)}}
+  .sh{animation:sh 10s cubic-bezier(.4,0,.2,1) infinite}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}.ttl{fill:#fff}.tk{fill:#d4d4d4}.pk,.sh{display:none}}
+</style>
+
+<g clip-path="url(#cl)">
+  <rect width="1000" height="256" fill="url(#bg)"/>
+  <rect x="120" y="0" width="760" height="1" fill="url(#hr)"/>
+  <rect class="sh" x="0" y="0" width="120" height="256" fill="#fff" opacity=".03" transform="skewX(-18)"/>
+  <rect x="48" y="58" width="908" height="1" fill="#2a2a2a"/>
+
+  <!-- 01 Interface -->
+  <g style="--dl:0s">
+    <rect class="a pn" x="40" y="24" width="172" height="194" rx="16" fill="url(#pg)" stroke="#3a3a3a"/>
+    <circle class="a hl" cx="52" cy="58" r="8"/><circle class="a nd" cx="52" cy="58" r="4"/>
+    <text class="i" x="66" y="62">01</text>
+    <text class="a s ttl" x="48" y="100">Interface</text>
+    <g class="a tk"><circle cx="52" cy="132" r="1.8"/><circle cx="52" cy="154" r="1.8"/><circle cx="52" cy="176" r="1.8"/><circle cx="52" cy="198" r="1.8"/></g>
+    <text class="a k tk" x="64" y="136">Flutter Mobile</text><text class="a k tk" x="64" y="158">Dart</text><text class="a k tk" x="64" y="180">120 FPS Impeller</text><text class="a k tk" x="64" y="202">Figma to Flutter</text>
+  </g>
+  <!-- 02 State -->
+  <g style="--dl:2s">
+    <rect class="a pn" x="227" y="24" width="172" height="194" rx="16" fill="url(#pg)" stroke="#3a3a3a"/>
+    <circle class="a hl" cx="239" cy="58" r="8"/><circle class="a nd" cx="239" cy="58" r="4"/>
+    <text class="i" x="253" y="62">02</text>
+    <text class="a s ttl" x="235" y="100">State</text>
+    <g class="a tk"><circle cx="239" cy="132" r="1.8"/><circle cx="239" cy="154" r="1.8"/><circle cx="239" cy="176" r="1.8"/></g>
+    <text class="a k tk" x="251" y="136">BLoC / Cubit</text><text class="a k tk" x="251" y="158">Provider</text><text class="a k tk" x="251" y="180">Clean Architecture</text>
+  </g>
+  <!-- 03 Data -->
+  <g style="--dl:4s">
+    <rect class="a pn" x="414" y="24" width="172" height="194" rx="16" fill="url(#pg)" stroke="#3a3a3a"/>
+    <circle class="a hl" cx="426" cy="58" r="8"/><circle class="a nd" cx="426" cy="58" r="4"/>
+    <text class="i" x="440" y="62">03</text>
+    <text class="a s ttl" x="422" y="100">Data</text>
+    <g class="a tk"><circle cx="426" cy="132" r="1.8"/><circle cx="426" cy="154" r="1.8"/><circle cx="426" cy="176" r="1.8"/><circle cx="426" cy="198" r="1.8"/></g>
+    <text class="a k tk" x="438" y="136">Drift ORM</text><text class="a k tk" x="438" y="158">SQLite, private</text><text class="a k tk" x="438" y="180">Supabase Auth</text><text class="a k tk" x="438" y="202">Firebase Cloud</text>
+  </g>
+  <!-- 04 Intelligence -->
+  <g style="--dl:6s">
+    <rect class="a pn" x="601" y="24" width="172" height="194" rx="16" fill="url(#pg)" stroke="#3a3a3a"/>
+    <circle class="a hl" cx="613" cy="58" r="8"/><circle class="a nd" cx="613" cy="58" r="4"/>
+    <text class="i" x="627" y="62">04</text>
+    <text class="a s ttl" x="609" y="100">Intelligence</text>
+    <g class="a tk"><circle cx="613" cy="132" r="1.8"/><circle cx="613" cy="154" r="1.8"/><circle cx="613" cy="176" r="1.8"/><circle cx="613" cy="198" r="1.8"/></g>
+    <text class="a k tk" x="625" y="136">Groq LLM stream</text><text class="a k tk" x="625" y="158">Google Gemini API</text><text class="a k tk" x="625" y="180">Google ML Kit</text><text class="a k tk" x="625" y="202">Speech-to-Text</text>
+  </g>
+  <!-- 05 Shipped -->
+  <g style="--dl:8s">
+    <rect class="a pn" x="788" y="24" width="172" height="194" rx="16" fill="url(#pg)" stroke="#3a3a3a"/>
+    <circle class="a hl" cx="800" cy="58" r="8"/><circle class="a nd" cx="800" cy="58" r="4"/>
+    <text class="i" x="814" y="62">05</text>
+    <text class="a s ttl" x="796" y="100">Shipped</text>
+    <g class="a tk"><circle cx="800" cy="132" r="1.8"/><circle cx="800" cy="154" r="1.8"/><circle cx="800" cy="176" r="1.8"/><circle cx="800" cy="198" r="1.8"/></g>
+    <text class="a k tk" x="812" y="136">CivicCoach AI</text><text class="a k tk" x="812" y="158">Zemen Calendar</text><text class="a k tk" x="812" y="180">ZenPeace Focus</text><text class="a k tk" x="812" y="202">Health Tracker</text>
+  </g>
+
+  <!-- data packet -->
+  <g class="pk"><rect x="-110" y="-1" width="110" height="2" fill="url(#tr)"/><circle r="3.5" fill="#fff" filter="url(#gl)"/></g>
+
+  <rect x="40" y="228" width="920" height="1" fill="#1e1e1e"/>
+  <text class="cap" x="40" y="248">One codebase, offline-first, AI-native.</text>
+  <text class="cap" x="960" y="248" text-anchor="end" style="fill:#5a5a5a">Rabia Aziz</text>
+  <rect x=".5" y=".5" width="999" height="255" rx="21.5" fill="none" stroke="#2a2a2a"/>
+</g>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTphYmE3MTNjZC0xOTFhLTQyNDItYTc2Zi1lMzkzNGM3YmYxMTgAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaNnHry6AzXfavNUajGQnhkwAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpmOGU1NjlhMy1mZjNmLTQ5OTgtYWFhMS1jNDJmYjYzNjIxZDZscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNonixFK8dYTkRbYnMM3TzkEAAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg4lbiOZXQFHkiLQGr/yiNn+LJ0m2KG6NIJB9XPCSqscykZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaM4ntesy0UTk6xn7dBf+ZZMAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIF10ephnpY5KKk8kH+7XeMbxkLokFWKdsXwoH5W+1evEZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GR+FZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmFiYTcxM2NkLTE5MWEtNDI0Mi1hNzZmLWUzOTM0YzdiZjExOC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjIzNzg3MTNjLWUxMDYtNDZmNC04NzBlLTlhNjBiMWFmYTA4MHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDiVuI5ldAUeSItAav/KI2f4snSbYobo0gkH1c8JKqxzKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg/LP8Y61ISp+4X3stkDQLLmmHww3MMKU2UhOypwqgj0KiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg/qi/gmqfV1SmfTrifXIdkm2xO97zLk6n2SV3wPxpIo90Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQOBFEtbtsOCzZw4WkfZY5p0IUNuXfXf2FwLKPvN53HeViQnvLdMMNsiqpNawIPm8HYQ8jWhZYFw8yqlnU1EZdiQ=</c2pa:manifest></metadata></svg>

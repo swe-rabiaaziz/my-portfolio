@@ -239,7 +239,7 @@ function getLocalFallbackResponse(
   // 9. Resume & CV
   if (query.includes('resume') || query.includes('cv')) {
     return {
-      reply: "Here is Rabia's latest official resume: https://drive.google.com/file/d/1xAb2h17uqQ9PtSzpiO2XRSF1BU8fn-A5/view?usp=drive_link — Feel free to review her background and qualifications!",
+      reply: "Here is Rabia's latest official resume: https://drive.google.com/file/d/1-QpVie8mLQpp-96RLKbq697vNbhfo_G1/view?usp=drive_link — Feel free to review her background and qualifications!",
       functionCalls: [{ name: 'openResume', args: {} }],
     };
   }

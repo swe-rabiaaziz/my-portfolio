@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 80" width="100%">
+  <defs>
+    <linearGradient id="marqBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="10%" stop-color="#0f172a"/>
+      <stop offset="90%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="fadeL" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#09090b" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadeR" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#09090b" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="80" fill="url(#marqBg)"/>
+  <!-- Top border line -->
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="#1e293b" stroke-width="1"/>
+  <!-- Bottom border line -->
+  <line x1="0" y1="79" x2="1200" y2="79" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Scrolling marquee text -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;-1800,0" dur="25s" repeatCount="indefinite"/>
+    <text y="48" font-family="'SF Pro Display','Inter',system-ui,sans-serif" font-weight="800" font-size="16" fill="#334155" letter-spacing="6">
+      <tspan x="0">CIVICCOACH</tspan>
+      <tspan x="180" fill="#1e293b">✦</tspan>
+      <tspan x="220">ZEMEN CALENDAR</tspan>
+      <tspan x="470" fill="#1e293b">✦</tspan>
+      <tspan x="510">ZENPEACE</tspan>
+      <tspan x="670" fill="#1e293b">✦</tspan>
+      <tspan x="710">HEALTH TRACKER</tspan>
+      <tspan x="960" fill="#1e293b">✦</tspan>
+      <tspan x="1000">FLUTTER × AI</tspan>
+      <tspan x="1200" fill="#1e293b">✦</tspan>
+      <tspan x="1240">SUPABASE</tspan>
+      <tspan x="1400" fill="#1e293b">✦</tspan>
+      <tspan x="1440">FIREBASE</tspan>
+      <tspan x="1600" fill="#1e293b">✦</tspan>
+      <tspan x="1640">CROSS-PLATFORM</tspan>
+      <tspan x="1900" fill="#1e293b">✦</tspan>
+      <tspan x="1940">CIVICCOACH</tspan>
+      <tspan x="2120" fill="#1e293b">✦</tspan>
+      <tspan x="2160">ZEMEN CALENDAR</tspan>
+      <tspan x="2410" fill="#1e293b">✦</tspan>
+      <tspan x="2450">ZENPEACE</tspan>
+      <tspan x="2610" fill="#1e293b">✦</tspan>
+      <tspan x="2650">HEALTH TRACKER</tspan>
+      <tspan x="2900" fill="#1e293b">✦</tspan>
+      <tspan x="2940">FLUTTER × AI</tspan>
+      <tspan x="3140" fill="#1e293b">✦</tspan>
+      <tspan x="3180">SUPABASE</tspan>
+      <tspan x="3340" fill="#1e293b">✦</tspan>
+      <tspan x="3380">FIREBASE</tspan>
+      <tspan x="3540" fill="#1e293b">✦</tspan>
+      <tspan x="3580">CROSS-PLATFORM</tspan>
+    </text>
+  </g>
+
+  <!-- Edge fades -->
+  <rect x="0" y="0" width="100" height="80" fill="url(#fadeL)"/>
+  <rect x="1100" y="0" width="100" height="80" fill="url(#fadeR)"/>
+</svg>

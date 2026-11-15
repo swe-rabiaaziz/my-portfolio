@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%">
+  <defs>
+    <linearGradient id="tsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/><stop offset="50%" stop-color="#0f172a"/><stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="qCardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141c2e"/><stop offset="100%" stop-color="#0c1220"/>
+    </linearGradient>
+    <filter id="qShadow">
+      <feDropShadow dx="5" dy="5" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+      <feDropShadow dx="-2" dy="-2" stdDeviation="8" flood-color="#fff" flood-opacity="0.015"/>
+    </filter>
+    <linearGradient id="quoteAccent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/><stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#tsBg)"/>
+
+  <!-- Testimonial 1 -->
+  <g transform="translate(30,25)" filter="url(#qShadow)">
+    <rect width="370" height="270" rx="20" fill="url(#qCardBg)" stroke="#1e293b" stroke-width="0.5"/>
+    <!-- Quote accent bar -->
+    <rect x="20" y="25" width="3" height="100" rx="1.5" fill="url(#quoteAccent)" opacity="0.6"/>
+    <!-- Quote mark -->
+    <text x="38" y="55" font-family="Georgia,serif" font-size="36" fill="#1e293b">"</text>
+    <!-- Quote text -->
+    <text x="38" y="75" font-family="'Inter',sans-serif" font-weight="400" font-size="11.5" fill="#94a3b8">
+      <tspan x="38" dy="0">She writes clean, maintainable code,</tspan>
+      <tspan x="38" dy="18">grasps complex UI/UX designs</tspan>
+      <tspan x="38" dy="18">effortlessly, and consistently delivers</tspan>
+      <tspan x="38" dy="18">high-performance mobile features</tspan>
+      <tspan x="38" dy="18">ahead of schedule.</tspan>
+    </text>
+    <!-- Divider -->
+    <line x1="30" y1="195" x2="340" y2="195" stroke="#1e293b" stroke-width="0.5"/>
+    <!-- Author -->
+    <text x="38" y="225" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="#e2e8f0">Afaq Zahir</text>
+    <text x="38" y="245" font-family="'JetBrains Mono',monospace" font-weight="400" font-size="10" fill="#475569" letter-spacing="1">Team Lead &amp; SE @ Apptex Software</text>
+  </g>
+
+  <!-- Testimonial 2 -->
+  <g transform="translate(415,25)" filter="url(#qShadow)">
+    <rect width="370" height="270" rx="20" fill="url(#qCardBg)" stroke="#1e293b" stroke-width="0.5"/>
+    <rect x="20" y="25" width="3" height="100" rx="1.5" fill="url(#quoteAccent)" opacity="0.6"/>
+    <text x="38" y="55" font-family="Georgia,serif" font-size="36" fill="#1e293b">"</text>
+    <text x="38" y="75" font-family="'Inter',sans-serif" font-weight="400" font-size="11.5" fill="#94a3b8">
+      <tspan x="38" dy="0">Exceptionally skilled Flutter developer</tspan>
+      <tspan x="38" dy="18">with strong technical initiative. Her</tspan>
+      <tspan x="38" dy="18">attention to clean code, modular</tspan>
+      <tspan x="38" dy="18">architecture, and rapid execution</tspan>
+      <tspan x="38" dy="18">always stands out.</tspan>
+    </text>
+    <line x1="30" y1="195" x2="340" y2="195" stroke="#1e293b" stroke-width="0.5"/>
+    <text x="38" y="225" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="#e2e8f0">Muhammad Uzair</text>
+    <text x="38" y="245" font-family="'JetBrains Mono',monospace" font-weight="400" font-size="10" fill="#475569" letter-spacing="1">Lead SE @ Metasense</text>
+  </g>
+
+  <!-- Testimonial 3 -->
+  <g transform="translate(800,25)" filter="url(#qShadow)">
+    <rect width="370" height="270" rx="20" fill="url(#qCardBg)" stroke="#1e293b" stroke-width="0.5"/>
+    <rect x="20" y="25" width="3" height="100" rx="1.5" fill="url(#quoteAccent)" opacity="0.6"/>
+    <text x="38" y="55" font-family="Georgia,serif" font-size="36" fill="#1e293b">"</text>
+    <text x="38" y="75" font-family="'Inter',sans-serif" font-weight="400" font-size="11.5" fill="#94a3b8">
+      <tspan x="38" dy="0">What truly sets her apart is her natural</tspan>
+      <tspan x="38" dy="18">flair for UI design and silky-smooth</tspan>
+      <tspan x="38" dy="18">animations — she crafts fluid, visually</tspan>
+      <tspan x="38" dy="18">captivating mobile experiences that</tspan>
+      <tspan x="38" dy="18">users love.</tspan>
+    </text>
+    <line x1="30" y1="195" x2="340" y2="195" stroke="#1e293b" stroke-width="0.5"/>
+    <text x="38" y="225" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="#e2e8f0">Ubaid Ullah</text>
+    <text x="38" y="245" font-family="'JetBrains Mono',monospace" font-weight="400" font-size="10" fill="#475569" letter-spacing="1">Flutter Team Lead @ Trisol Technologies</text>
+  </g>
+</svg>

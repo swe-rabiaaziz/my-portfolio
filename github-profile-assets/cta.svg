@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="100%">
+  <defs>
+    <linearGradient id="ctaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="ctaBtnBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <filter id="btnGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="ctaShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748b" stop-opacity="0">
+        <animate attributeName="offset" values="-0.5;1.5" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="15%" stop-color="#e2e8f0" stop-opacity="0.6">
+        <animate attributeName="offset" values="-0.35;1.65" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="30%" stop-color="#64748b" stop-opacity="0">
+        <animate attributeName="offset" values="-0.2;1.8" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <radialGradient id="ctaOrb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e2e8f0" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#e2e8f0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="200" fill="url(#ctaBg)"/>
+
+  <!-- Ambient orb -->
+  <circle cx="600" cy="100" r="200" fill="url(#ctaOrb)">
+    <animate attributeName="r" values="200;220;200" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Top border shimmer -->
+  <line x1="200" y1="20" x2="1000" y2="20" stroke="url(#ctaShimmer)" stroke-width="0.5"/>
+
+  <!-- Main CTA text -->
+  <text x="600" y="75" text-anchor="middle" font-family="'SF Pro Display','Inter',system-ui,sans-serif" font-weight="300" font-size="22" fill="#64748b" letter-spacing="2">
+    Got an app idea?
+  </text>
+  <text x="600" y="110" text-anchor="middle" font-family="'SF Pro Display','Inter',system-ui,sans-serif" font-weight="800" font-size="28" fill="#e2e8f0" letter-spacing="1">
+    Let's build something amazing together.
+  </text>
+
+  <!-- CTA Button -->
+  <g transform="translate(490,130)" filter="url(#btnGlow)">
+    <rect width="220" height="44" rx="22" fill="url(#ctaBtnBg)"/>
+    <text x="110" y="28" text-anchor="middle" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="#0f172a" letter-spacing="3">✦  REACH OUT</text>
+    <!-- Shimmer overlay -->
+    <rect width="220" height="44" rx="22" fill="url(#ctaShimmer)" opacity="0.3"/>
+  </g>
+
+  <!-- Bottom border shimmer -->
+  <line x1="200" y1="185" x2="1000" y2="185" stroke="url(#ctaShimmer)" stroke-width="0.5"/>
+
+  <!-- Side decorations -->
+  <text x="60" y="105" font-family="'JetBrains Mono',monospace" font-size="9" fill="#1e293b" letter-spacing="2">SWE.RABIAAZIZ</text>
+  <text x="1140" y="105" text-anchor="end" font-family="'JetBrains Mono',monospace" font-size="9" fill="#1e293b" letter-spacing="2">FLUTTER × AI</text>
+</svg>

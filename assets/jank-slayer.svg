@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-label="Jank Slayer: Rabia Aziz's katana slices through frame drops, memory leaks and rebuild storms into 120 FPS Impeller perfection." xmlns:c2pa="http://c2pa.org/manifest">
+<defs>
+  <clipPath id="clip"><rect width="1200" height="460" rx="24"/></clipPath>
+  <clipPath id="ct"><polygon points="-100,-80 100,-80 100,-50 -100,50"/></clipPath>
+  <clipPath id="cb"><polygon points="-100,50 100,-50 100,80 -100,80"/></clipPath>
+
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="2.5" result="a"/><feGaussianBlur stdDeviation="7" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="a"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <radialGradient id="bg" cx="50%" cy="52%" r="60%"><stop offset="0" stop-color="#1b1b1b"/><stop offset="0.6" stop-color="#0d0d0d"/><stop offset="1" stop-color="#060606"/></radialGradient>
+  <radialGradient id="halo" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d1d1d"/><stop offset="1" stop-color="#101010"/></linearGradient>
+  <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#303030"/><stop offset="1" stop-color="#171717"/></linearGradient>
+  <linearGradient id="sb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="#6b6b6b"/><stop offset="1" stop-color="#d9d9d9"/></linearGradient>
+  <linearGradient id="hl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="bl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a8a8a"/><stop offset=".6" stop-color="#f2f2f2"/><stop offset="1" stop-color="#fff"/></linearGradient>
+  <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="1" fill="#2a2a2a" opacity=".7"/></pattern>
+  <radialGradient id="fade" cx="50%" cy="50%" r="70%"><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".75"/></radialGradient>
+
+  <!-- shared pieces (static only, animation lives on wrappers) -->
+  <g id="card">
+    <rect x="-90" y="-65" width="180" height="130" rx="14" fill="url(#cg)" stroke="#2e2e2e"/>
+    <rect x="-70" y="-65" width="140" height="1" fill="url(#hl)"/>
+    <path d="M-80-52v-8h8M72-60h8v8M80 52v8h-8M-72 60h-8v-8" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <g id="rt">
+    <circle r="86" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="6 7" opacity=".7"/>
+    <path d="M-100 0h18M82 0h18M0-100v18M0 82v18" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <path id="sp" d="M0-18L0-44M13-13L32-32M18 0L44 0M13 13L32 32M0 18L0 44M-13 13L-32 32M-18 0L-44 0M-13-13L-32-32" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <g id="katana">
+    <path d="M0-3C60-6 130-7 200 0 212 2 220 6 226 10 200 8 100 7 0 5Z" fill="url(#bl)"/>
+    <path d="M0-3C60-6 130-7 200 0 212 2 220 6 226 10" fill="none" stroke="#fff" stroke-width="1.6" filter="url(#glow)"/>
+    <path d="M12 1Q50-1 90 2T180 4" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width=".8"/>
+    <rect x="-6" y="-4" width="8" height="10" fill="#d4d4d4" stroke="#777"/>
+    <ellipse cx="-9" cy="1" rx="3.5" ry="13" fill="#161616" stroke="#8a8a8a" stroke-width="1.5"/>
+    <rect x="-82" y="-3" width="72" height="9" rx="3" fill="#161616" stroke="#444"/>
+    <path d="M-70-3l7 4.5-7 4.5-7-4.5zM-54-3l7 4.5-7 4.5-7-4.5zM-38-3l7 4.5-7 4.5-7-4.5zM-22-3l7 4.5-7 4.5-7-4.5z" fill="#f5f5f5"/>
+    <path d="M-82-3C-87 0-87 4-82 6Z" fill="#8a8a8a"/>
+  </g>
+
+  <!-- bug cards -->
+  <g id="b0" class="c"><use href="#card"/><rect x="-40" y="-53" width="80" height="18" rx="9" fill="#1c1c1c" stroke="#444"/><text y="-41" font-size="9" font-weight="700" fill="#a8a8a8" letter-spacing="1">⚠ DETECTED</text><text y="2" font-size="13" font-weight="800" fill="#fff" letter-spacing="1.2">JANK SPIKE</text><text y="22" font-size="10" font-weight="600" fill="#8a8a8a">42 FPS · FRAME DROP</text><text y="40" font-size="8.5" fill="#5c5c5c">Unscheduled layout pass</text></g>
+  <g id="b1" class="c"><use href="#card"/><rect x="-40" y="-53" width="80" height="18" rx="9" fill="#1c1c1c" stroke="#444"/><text y="-41" font-size="9" font-weight="700" fill="#a8a8a8" letter-spacing="1">⚠ DETECTED</text><text y="2" font-size="13" font-weight="800" fill="#fff" letter-spacing="1.2">STREAM LEAK</text><text y="22" font-size="10" font-weight="600" fill="#8a8a8a">UNCLOSED RX · +45MB</text><text y="40" font-size="8.5" fill="#5c5c5c">Dangling subscriptions</text></g>
+  <g id="b2" class="c"><use href="#card"/><rect x="-40" y="-53" width="80" height="18" rx="9" fill="#1c1c1c" stroke="#444"/><text y="-41" font-size="9" font-weight="700" fill="#a8a8a8" letter-spacing="1">⚠ DETECTED</text><text y="2" font-size="13" font-weight="800" fill="#fff" letter-spacing="1.2">REBUILD STORM</text><text y="22" font-size="10" font-weight="600" fill="#8a8a8a">ROOT DIRTY · 184 NODES</text><text y="40" font-size="8.5" fill="#5c5c5c">Full subtree invalidation</text></g>
+  <g id="b3" class="c"><use href="#card"/><rect x="-40" y="-53" width="80" height="18" rx="9" fill="#1c1c1c" stroke="#444"/><text y="-41" font-size="9" font-weight="700" fill="#a8a8a8" letter-spacing="1">⚠ DETECTED</text><text y="2" font-size="13" font-weight="800" fill="#fff" letter-spacing="1.2">THREAD LOCK</text><text y="22" font-size="10" font-weight="600" fill="#8a8a8a">SYNC JSON · 88ms FREEZE</text><text y="40" font-size="8.5" fill="#5c5c5c">Blocking main isolate</text></g>
+  <g id="b4" class="c"><use href="#card"/><rect x="-40" y="-53" width="80" height="18" rx="9" fill="#1c1c1c" stroke="#444"/><text y="-41" font-size="9" font-weight="700" fill="#a8a8a8" letter-spacing="1">⚠ DETECTED</text><text y="2" font-size="13" font-weight="800" fill="#fff" letter-spacing="1.2">ANR DEADLOCK</text><text y="22" font-size="10" font-weight="600" fill="#8a8a8a">BLOCKING I/O · 5.2s HALT</text><text y="40" font-size="8.5" fill="#5c5c5c">Synchronous disk access</text></g>
+
+  <!-- solved chrome -->
+  <g id="sc">
+    <circle r="120" fill="url(#halo)"/>
+    <rect x="-90" y="-65" width="180" height="130" rx="14" fill="url(#sg)" stroke="url(#sb)" stroke-width="1.5"/>
+    <rect x="-70" y="-65" width="140" height="1.5" fill="url(#hl)"/>
+    <path d="M-80-52v-8h8M72-60h8v8M80 52v8h-8M-72 60h-8v-8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <rect x="-40" y="-53" width="80" height="18" rx="9" fill="#262626" stroke="#7a7a7a"/>
+    <text y="-41" class="c" font-size="9" font-weight="800" fill="#fafafa" letter-spacing="1.2">✓ SOLVED</text>
+  </g>
+</defs>
+
+<style>
+  text{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;text-rendering:geometricPrecision}
+  .c{text-anchor:middle}
+  .sv{opacity:0;animation-duration:12.5s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.4,0,.2,1)}
+  .ret,.h,.beam,.ring,.spk,.kat{animation-duration:12.5s;animation-iteration-count:infinite;animation-fill-mode:both;animation-delay:var(--dl);animation-timing-function:cubic-bezier(.45,0,.2,1)}
+  .ret{animation-name:ret;opacity:0}
+  .h{animation-name:split}.t{--d:1}.b{--d:-1}
+  .beam{animation-name:beam;stroke-dasharray:240;opacity:0}
+  .ring{animation-name:ring;opacity:0}
+  .spk{animation-name:spk;opacity:0}
+  .kat{animation-name:kat;opacity:0}
+
+  @keyframes ret{0%{opacity:0;transform:scale(1.5) rotate(0)}2.6%{opacity:.9;transform:scale(1) rotate(55deg)}4%,100%{opacity:0;transform:scale(.82) rotate(110deg)}}
+  @keyframes kat{0%,2%{opacity:0;transform:translate(-150px,75px)}3%{opacity:1;transform:translate(-125px,62px)}4.6%{opacity:1;transform:translate(150px,-75px)}7%,100%{opacity:0;transform:translate(195px,-98px)}}
+  @keyframes beam{0%,3.6%{opacity:0;stroke-dashoffset:240}3.9%{opacity:1;stroke-dashoffset:0}6.5%,100%{opacity:0;stroke-dashoffset:-240}}
+  @keyframes ring{0%,3.7%{opacity:0;transform:scale(.2)}4%{opacity:.8}9%,100%{opacity:0;transform:scale(4.2)}}
+  @keyframes spk{0%,3.7%{opacity:0;transform:scale(.3)}4%{opacity:1;transform:scale(.9)}9%,100%{opacity:0;transform:scale(1.9)}}
+  @keyframes split{
+    0%,3.8%{opacity:1;transform:none}
+    5%{opacity:1;transform:translate(calc(var(--d)*-1px),calc(var(--d)*-2px))}
+    9%,13%{opacity:0;transform:translate(calc(var(--d)*-12px),calc(var(--d)*-24px)) rotate(calc(var(--d)*-3deg))}
+    13.1%,100%{opacity:1;transform:none}}
+
+  /* solved state: strike at 2s per station, hold, reset together */
+  .v0{animation-name:v0}.v1{animation-name:v1}.v2{animation-name:v2}.v3{animation-name:v3}.v4{animation-name:v4}
+  @keyframes v0{0%,9%{opacity:0}13%,92%{opacity:1}97%,100%{opacity:0}}
+  @keyframes v1{0%,25%{opacity:0}29%,92%{opacity:1}97%,100%{opacity:0}}
+  @keyframes v2{0%,41%{opacity:0}45%,92%{opacity:1}97%,100%{opacity:0}}
+  @keyframes v3{0%,57%{opacity:0}61%,92%{opacity:1}97%,100%{opacity:0}}
+  @keyframes v4{0%,73%{opacity:0}77%,92%{opacity:1}97%,100%{opacity:0}}
+
+  /* counter */
+  .n{opacity:0;animation-duration:12.5s;animation-iteration-count:infinite;animation-fill-mode:both;animation-timing-function:ease-out}
+  @keyframes pop{0%{opacity:0;transform:translateY(5px)}1.6%,14%{opacity:1;transform:none}16%,100%{opacity:0}}
+  @keyframes popL{0%{opacity:0;transform:translateY(5px)}1.6%,22%{opacity:1;transform:none}25%,100%{opacity:0}}
+  @keyframes zero{0%,3.5%{opacity:1}4.5%,92%{opacity:0}97%,100%{opacity:1}}
+  .n1,.n2,.n3,.n4{animation-name:pop}.n5{animation-name:popL}.n0{animation-name:zero;opacity:1}
+
+  @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+  .cur{animation:blink 1s steps(1) infinite}
+  @keyframes led{0%,100%{opacity:1}50%{opacity:.3}}
+  .led{animation:led 1.8s ease-in-out infinite}
+  @keyframes drift{0%{transform:translateY(0);opacity:0}25%{opacity:.6}100%{transform:translateY(-46px);opacity:0}}
+  .dust circle{animation:drift 6s linear infinite}
+  @keyframes sheen{0%{transform:translateX(-300px)}100%{transform:translateX(1500px)}}
+  .sheen{animation:sheen 12.5s cubic-bezier(.4,0,.2,1) infinite}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important}
+    .sv{opacity:1!important}.n0,.n1,.n2,.n3,.n4,.sheen{opacity:0!important}.n5{opacity:1!important}
+  }
+</style>
+
+<g clip-path="url(#clip)">
+  <rect width="1200" height="460" fill="url(#bg)"/>
+  <rect width="1200" height="460" fill="url(#dots)"/>
+  <rect width="1200" height="460" fill="url(#fade)"/>
+  <rect x=".5" y=".5" width="1199" height="459" rx="23.5" fill="none" stroke="#2a2a2a"/>
+  <rect y="238" width="1200" height="1" fill="url(#rule)"/>
+  <rect class="sheen" x="0" y="0" width="140" height="460" fill="#fff" opacity=".035" transform="skewX(-20)"/>
+
+  <g class="dust" fill="#e8e8e8">
+    <circle cx="120" cy="360" r="1.5" style="animation-delay:-1s"/><circle cx="290" cy="380" r="1.2" style="animation-delay:-3s"/>
+    <circle cx="500" cy="370" r="1.8" style="animation-delay:-5s"/><circle cx="730" cy="385" r="1.4" style="animation-delay:-2s"/>
+    <circle cx="930" cy="365" r="1.2" style="animation-delay:-4s"/><circle cx="1110" cy="378" r="1.5" style="animation-delay:-.5s"/>
+  </g>
+
+  <!-- header -->
+  <rect x="28" y="64" width="1144" height="1" fill="#1c1c1c"/>
+  <circle class="led" cx="42" cy="34" r="4" fill="#fff"/><circle cx="42" cy="34" r="9" fill="none" stroke="#555"/>
+  <text x="62" y="31" font-size="13" font-weight="700" fill="#fafafa" letter-spacing="1.5">RABIA AZIZ // JANK SLAYER</text>
+  <text x="62" y="47" font-size="10" font-weight="600" fill="#777" letter-spacing="1">Precision katana engine · zero jank at 120 FPS</text>
+  <rect x="505" y="21" width="190" height="26" rx="13" fill="#131313" stroke="#2c2c2c"/>
+  <text x="600" y="38" class="c" font-size="10" font-weight="600" fill="#a8a8a8" letter-spacing="1.2">FLUTTER · IMPELLER GPU</text>
+  <text x="840" y="38" font-size="10" font-weight="600" fill="#777" letter-spacing="1">SLAYED</text>
+  <g font-size="12" font-weight="800" fill="#fff">
+    <text class="n n0" x="896" y="38">0/5</text>
+    <text class="n n1" x="896" y="38" style="animation-delay:.5s">1/5</text>
+    <text class="n n2" x="896" y="38" style="animation-delay:2.5s">2/5</text>
+    <text class="n n3" x="896" y="38" style="animation-delay:4.5s">3/5</text>
+    <text class="n n4" x="896" y="38" style="animation-delay:6.5s">4/5</text>
+    <text class="n n5" x="896" y="38" style="animation-delay:8.5s">5/5 S-TIER</text>
+  </g>
+  <g fill="#262626"><rect x="1000" y="31" width="28" height="6" rx="3"/><rect x="1032" y="31" width="28" height="6" rx="3"/><rect x="1064" y="31" width="28" height="6" rx="3"/><rect x="1096" y="31" width="28" height="6" rx="3"/><rect x="1128" y="31" width="28" height="6" rx="3"/></g>
+  <g fill="#fafafa" filter="url(#glow)">
+    <rect class="sv v0" x="1000" y="31" width="28" height="6" rx="3"/><rect class="sv v1" x="1032" y="31" width="28" height="6" rx="3"/><rect class="sv v2" x="1064" y="31" width="28" height="6" rx="3"/><rect class="sv v3" x="1096" y="31" width="28" height="6" rx="3"/><rect class="sv v4" x="1128" y="31" width="28" height="6" rx="3"/>
+  </g>
+  <text x="1156" y="52" text-anchor="end" font-size="8.5" font-weight="600" fill="#5c5c5c" letter-spacing="1">BUDGET 8.33ms</text>
+
+  <!-- stations -->
+  <g transform="translate(155 238)" style="--dl:0s">
+    <g class="ret"><use href="#rt"/></g>
+    <g class="h t" clip-path="url(#ct)"><use href="#b0"/></g><g class="h b" clip-path="url(#cb)"><use href="#b0"/></g>
+    <g class="sv v0 c"><use href="#sc"/><text y="2" font-size="12.5" font-weight="800" fill="#fff" letter-spacing="1">120 FPS IMPELLER</text><text y="22" font-size="9.5" font-weight="600" fill="#e5e5e5">0.00ms JANK · GPU LOCKED</text><text y="40" font-size="8.5" fill="#a3a3a3">Pre-compiled shader pipeline</text></g>
+    <circle class="ring" r="24" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <g class="spk" filter="url(#glow)"><use href="#sp"/></g>
+    <line class="beam" x1="-100" y1="50" x2="100" y2="-50" stroke="#fff" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+    <g class="kat"><g transform="rotate(-27) translate(-113 -1)"><use href="#katana"/></g></g>
+  </g>
+
+  <g transform="translate(375 238)" style="--dl:2s">
+    <g class="ret"><use href="#rt"/></g>
+    <g class="h t" clip-path="url(#ct)"><use href="#b1"/></g><g class="h b" clip-path="url(#cb)"><use href="#b1"/></g>
+    <g class="sv v1 c"><use href="#sc"/><text y="2" font-size="12.5" font-weight="800" fill="#fff" letter-spacing="1">AUTO-DISPOSED</text><text y="22" font-size="9.5" font-weight="600" fill="#e5e5e5">STREAM CANCELLED &amp; CLEANED</text><text y="40" font-size="8.5" fill="#a3a3a3">Reactive Drift lifecycle</text></g>
+    <circle class="ring" r="24" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <g class="spk" filter="url(#glow)"><use href="#sp"/></g>
+    <line class="beam" x1="-100" y1="50" x2="100" y2="-50" stroke="#fff" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+    <g class="kat"><g transform="rotate(-27) translate(-113 -1)"><use href="#katana"/></g></g>
+  </g>
+
+  <g transform="translate(595 238)" style="--dl:4s">
+    <g class="ret"><use href="#rt"/></g>
+    <g class="h t" clip-path="url(#ct)"><use href="#b2"/></g><g class="h b" clip-path="url(#cb)"><use href="#b2"/></g>
+    <g class="sv v2 c"><use href="#sc"/><text y="2" font-size="12.5" font-weight="800" fill="#fff" letter-spacing="1">REPAINT BOUNDARY</text><text y="22" font-size="9.5" font-weight="600" fill="#e5e5e5">ISOLATED CACHE LAYER</text><text y="40" font-size="8.5" fill="#a3a3a3">Subtree layer shielding</text></g>
+    <circle class="ring" r="24" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <g class="spk" filter="url(#glow)"><use href="#sp"/></g>
+    <line class="beam" x1="-100" y1="50" x2="100" y2="-50" stroke="#fff" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+    <g class="kat"><g transform="rotate(-27) translate(-113 -1)"><use href="#katana"/></g></g>
+  </g>
+
+  <g transform="translate(815 238)" style="--dl:6s">
+    <g class="ret"><use href="#rt"/></g>
+    <g class="h t" clip-path="url(#ct)"><use href="#b3"/></g><g class="h b" clip-path="url(#cb)"><use href="#b3"/></g>
+    <g class="sv v3 c"><use href="#sc"/><text y="2" font-size="12.5" font-weight="800" fill="#fff" letter-spacing="1">BACKGROUND ISOLATE</text><text y="22" font-size="9.5" font-weight="600" fill="#e5e5e5">OFF-MAIN THREAD POOL</text><text y="40" font-size="8.5" fill="#a3a3a3">True concurrent worker</text></g>
+    <circle class="ring" r="24" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <g class="spk" filter="url(#glow)"><use href="#sp"/></g>
+    <line class="beam" x1="-100" y1="50" x2="100" y2="-50" stroke="#fff" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+    <g class="kat"><g transform="rotate(-27) translate(-113 -1)"><use href="#katana"/></g></g>
+  </g>
+
+  <g transform="translate(1035 238)" style="--dl:8s">
+    <g class="ret"><use href="#rt"/></g>
+    <g class="h t" clip-path="url(#ct)"><use href="#b4"/></g><g class="h b" clip-path="url(#cb)"><use href="#b4"/></g>
+    <g class="sv v4 c"><use href="#sc"/><text y="2" font-size="12.5" font-weight="800" fill="#fff" letter-spacing="1">ASYNC ENGINE</text><text y="22" font-size="9.5" font-weight="600" fill="#e5e5e5">NON-BLOCKING DRIFT / SQL</text><text y="40" font-size="8.5" fill="#a3a3a3">Zero UI micro-stutter</text></g>
+    <circle class="ring" r="24" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <g class="spk" filter="url(#glow)"><use href="#sp"/></g>
+    <line class="beam" x1="-100" y1="50" x2="100" y2="-50" stroke="#fff" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+    <g class="kat"><g transform="rotate(-27) translate(-113 -1)"><use href="#katana"/></g></g>
+  </g>
+
+  <!-- footer -->
+  <rect x="28" y="398" width="1144" height="1" fill="#1c1c1c"/>
+  <text x="36" y="426" font-size="12" font-weight="700" fill="#777">&gt;</text>
+  <text x="54" y="426" font-size="11" font-weight="600" fill="#a3a3a3">blade.execute():</text>
+  <text x="172" y="426" font-size="11" fill="#fafafa">"One clean cut through every dropped frame, memory leak, and rebuild storm."</text>
+  <rect class="cur" x="742" y="415" width="7" height="13" fill="#fff"/>
+  <rect x="936" y="412" width="228" height="28" rx="14" fill="#131313" stroke="#2c2c2c"/>
+  <path d="M954 426l4-6 4 6-4 6z" fill="#fff"/>
+  <text x="972" y="430" font-size="10" font-weight="700" fill="#e5e5e5" letter-spacing="1">PORTFOLIO</text>
+  <text x="1148" y="430" text-anchor="end" font-size="9" font-weight="600" fill="#777">120 FPS</text>
+</g>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYToyZmFiNmU0Yi1mZGFjLTQ5OTAtOGI2Mi0xMDA1NDY1OTQwOTEAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaB4rklS5EvvvZRADoEfIMu4AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpiZmM5M2I4OC02ZmU5LTQ3MWItYTVhOS0xY2FhOGNlZTUzYTZscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo2a+5TvWNs8EvfRJyeSud+gAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggj1Q8xQ4x1itmaY3/Y3keuXOI7FwuK9U1D0YFgX4pYnukZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaC6Q6dS55UKcVwI9mJoZKioAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIOfScykJ82s+gRJCvskPTPu4Onau8bCB4PA13zBsIdIxZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GUtRZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjJmYWI2ZTRiLWZkYWMtNDk5MC04YjYyLTEwMDU0NjU5NDA5MS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmU3NjhkMjMxLTdhMDItNDM2ZS1hMDA4LTMyYmVhODAzMmM0NnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCPVDzFDjHWK2Zpjf9jeR65c4jsXC4r1TUPRgWBfilie6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggNypfb/h4vn4joVT8cT4i0Ope+BQHz/16nmQLaxDO71qiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggixLktjS/sHaD7FWGMBJ0FTDn+MRz3HpEYkn7GIdLYvd0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQKnCjcjqa/ve1xLqJAhMkf4+ok0VPc1pmC2+WdPeGqESuu3nuRKMEyvI9d1ozPIP7lPcA8W3aeLBGyBA1fEQ7Dw=</c2pa:manifest></metadata></svg>

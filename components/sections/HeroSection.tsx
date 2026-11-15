@@ -267,7 +267,7 @@ export default function HeroSection({ animReady = false }: { animReady?: boolean
             {/* 2. View Resume: Monochrome Ceramic Cream / Silver Pill */}
             <div className="relative group/resume cursor-pointer w-full sm:w-auto">
               <a
-                href="https://drive.google.com/file/d/1xAb2h17uqQ9PtSzpiO2XRSF1BU8fn-A5/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1-QpVie8mLQpp-96RLKbq697vNbhfo_G1/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative z-10 w-full sm:w-auto min-h-[58px] px-4 py-2 rounded-full flex items-center justify-between gap-3 text-zinc-900 transition-all duration-300 select-none cursor-pointer border border-white/95 shadow-[0_12px_28px_rgba(0,0,0,0.45),0_2px_6px_rgba(0,0,0,0.25),inset_0_2px_3px_#ffffff,inset_0_-2px_4px_rgba(0,0,0,0.12)] group-hover/resume:scale-[1.03] group-hover/resume:shadow-[0_16px_36px_rgba(0,0,0,0.55),0_0_24px_rgba(255,255,255,0.35)] active:scale-[0.98]"

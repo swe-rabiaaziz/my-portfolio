@@ -22,7 +22,7 @@ FULL PROFILE:
 - Instagram: https://www.instagram.com/swe.rabiaaziz/ (@swe.rabiaaziz)
 - TikTok: https://www.tiktok.com/@swe.rabiaaziz (@swe.rabiaaziz)
 - Calendly (1-on-1 Meeting): https://calendly.com/swe-rabiaaziz/30min
-- Resume (Google Drive): https://drive.google.com/file/d/1xAb2h17uqQ9PtSzpiO2XRSF1BU8fn-A5/view?usp=drive_link
+- Resume (Google Drive): https://drive.google.com/file/d/1-QpVie8mLQpp-96RLKbq697vNbhfo_G1/view?usp=drive_link
 
 PORTFOLIO HIGHLIGHTS & STATS:
 - 10+ Projects completed & battle-tested across production applications

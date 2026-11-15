@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380" role="img" aria-label="Stats: 4+ production apps on Google Play, 1+ year of Flutter, AI and ML integrations with Groq, Gemini and ML Kit, and 100% passion for MVVM and clean architecture" xmlns:c2pa="http://c2pa.org/manifest">
+<defs>
+<linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a0a0a"/><stop offset="0.5" stop-color="#141414"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171717"/><stop offset="1" stop-color="#0f0f0f"/></linearGradient>
+<linearGradient id="numGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#8c8c8c"/></linearGradient>
+<linearGradient id="borderSweep" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#525252"/><stop offset="0.5" stop-color="#ffffff"/><stop offset="1" stop-color="#525252"/></linearGradient>
+<linearGradient id="hl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.4"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="shineG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.07"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="beatG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#525252"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+<radialGradient id="glowW" cx="1" cy="0" r="0.9"><stop offset="0" stop-color="#fff" stop-opacity="0.075"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<radialGradient id="orb" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.07"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#fff" fill-opacity="0.05"/></pattern>
+<filter id="neuShadow" x="-10%" y="-10%" width="120%" height="125%">
+  <feDropShadow dx="4" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.7"/>
+  <feDropShadow dx="-1" dy="-1" stdDeviation="4" flood-color="#fff" flood-opacity="0.025"/>
+</filter>
+<clipPath id="plateClip"><rect width="1000" height="380" rx="28"/></clipPath>
+<clipPath id="clipHero"><rect width="381" height="333" rx="24"/></clipPath>
+<clipPath id="clipS"><rect width="271" height="159" rx="22"/></clipPath>
+<clipPath id="clipW"><rect width="557" height="159" rx="22"/></clipPath>
+<clipPath id="odoHero"><rect x="24" y="50" width="104" height="156"/></clipPath>
+<clipPath id="odoSmall"><rect x="18" y="40" width="46" height="62"/></clipPath>
+</defs>
+<style>
+.idx  { font: 700 10.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 2px; fill: #737373; }
+.ttl  { font: 800 18px 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; fill: #fafafa; letter-spacing: -0.3px; }
+.dsc  { font: 400 12.5px 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; fill: #a3a3a3; }
+.mono { font: 500 9.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #d4d4d4; }
+.monog{ font: 600 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #737373; letter-spacing: 1.5px; }
+.chip { font: 500 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #b4b4b4; }
+.num  { font-family: 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; font-weight: 900; letter-spacing: -3px; fill: url(#numGrad); }
+.plus { font-family: 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; font-weight: 300; fill: #737373; }
+
+.rise  { animation: rise 0.9s cubic-bezier(.2,.8,.2,1) both; }
+.sweep { stroke-dasharray: 120 880; animation: sweep 8s linear infinite; }
+.shine { animation: shine 9s ease-in-out infinite; }
+.roll4 { animation: roll4 7s cubic-bezier(.16,.84,.24,1) infinite; }
+.roll1 { animation: roll1 7s cubic-bezier(.16,.84,.24,1) infinite; }
+.fill  { animation: fill 7s cubic-bezier(.3,.7,.2,1) infinite; }
+.tile  { animation: tile 4.4s ease-in-out infinite; }
+.sk    { animation: sk 2.4s ease-in-out infinite; }
+.pulse { transform-box: fill-box; transform-origin: center; animation: pulse 2.4s ease-in-out infinite; }
+.ringo { transform-box: fill-box; transform-origin: center; animation: ringo 3s ease-out infinite; }
+.node  { animation: node 4.8s ease-in-out infinite; }
+.beat  { stroke-dasharray: 150 850; animation: beat 3.2s linear infinite; }
+.drift { animation: drift 18s ease-in-out infinite alternate; }
+
+@keyframes rise  { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@keyframes sweep { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+@keyframes shine { 0% { transform: translateX(0); } 30%,100% { transform: translateX(700px); } }
+@keyframes roll4 { 0% { transform: translateY(0); } 22%, 86% { transform: translateY(-600px); } 96%, 100% { transform: translateY(0); } }
+@keyframes roll1 { 0% { transform: translateY(0); } 22%, 86% { transform: translateY(-70px); } 96%, 100% { transform: translateY(0); } }
+@keyframes fill  { 0% { stroke-dashoffset: 188.5; } 25%, 86% { stroke-dashoffset: 0; } 96%, 100% { stroke-dashoffset: 188.5; } }
+@keyframes tile  { 0%,100% { stroke-opacity: .25; fill-opacity: 0; } 8%,26% { stroke-opacity: 1; fill-opacity: .12; } 36% { stroke-opacity: .25; fill-opacity: 0; } }
+@keyframes sk    { 0%,100% { opacity: .35; } 50% { opacity: .9; } }
+@keyframes pulse { 0%,100% { transform: scale(1); opacity: .95; } 50% { transform: scale(1.5); opacity: .45; } }
+@keyframes ringo { 0% { transform: scale(.6); opacity: .6; } 100% { transform: scale(1.7); opacity: 0; } }
+@keyframes node  { 0%,100% { stroke-opacity: .25; fill-opacity: 0; } 6%,20% { stroke-opacity: 1; fill-opacity: .12; } 30% { stroke-opacity: .25; fill-opacity: 0; } }
+@keyframes beat  { from { stroke-dashoffset: 150; } to { stroke-dashoffset: -1000; } }
+@keyframes drift { to { transform: translate(60px, 36px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise,.sweep,.shine,.roll4,.roll1,.fill,.tile,.sk,.pulse,.ringo,.node,.beat,.drift { animation: none; }
+}
+</style>
+<rect width="1000" height="380" rx="28" fill="url(#plate)"/>
+<g clip-path="url(#plateClip)">
+  <rect width="1000" height="380" fill="url(#dots)"/>
+  <g class="drift"><circle cx="160" cy="60" r="300" fill="url(#orb)"/></g>
+  <g class="drift" style="animation-direction:alternate-reverse"><circle cx="880" cy="340" r="320" fill="url(#orb)"/></g>
+</g>
+<rect x="0.5" y="0.5" width="999" height="379" rx="27.5" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+
+<g transform="translate(24,24)">
+<g class="rise" style="animation-delay:0.1s" filter="url(#neuShadow)">
+  <rect x="0.5" y="0.5" width="380" height="332" rx="24" fill="url(#cardBg)" stroke="#262626"/>
+  <rect x="0.5" y="0.5" width="380" height="332" rx="24" fill="url(#glowW)"/>
+  <rect x="24" y="0.5" width="332" height="1" fill="url(#hl)"/>
+  <g clip-path="url(#clipHero)"><g class="shine" style="animation-delay:1.0s"><rect x="-140" y="-20" width="90" height="372" fill="url(#shineG)" transform="skewX(-20)"/></g></g>
+
+  <text class="idx" x="28" y="40">SHIPPED TO PRODUCTION</text>
+  <circle class="pulse" cx="312" cy="36" r="3" fill="#fafafa"/><text class="monog" x="352" y="40" text-anchor="end" style="letter-spacing:1.5px">LIVE</text>
+  <g clip-path="url(#odoHero)">
+    <g class="roll4" transform="translate(0,-600)"><text class="num" x="24" y="190" font-size="150">0</text><text class="num" x="24" y="340" font-size="150">1</text><text class="num" x="24" y="490" font-size="150">2</text><text class="num" x="24" y="640" font-size="150">3</text><text class="num" x="24" y="790" font-size="150">4</text></g>
+  </g>
+  <text class="plus" x="124" y="150" font-size="76">+</text>
+  <text class="ttl" x="28" y="246" style="font-size:22px">Production apps</text>
+  <text class="dsc" x="28" y="268">Published and running in users’ hands.</text>
+<rect class="tile" x="28" y="284" width="36" height="36" rx="11" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.3" style="animation-delay:0.0s"/><path d="M42 295 L54 302 L42 309 Z" fill="#fafafa" fill-opacity="0.85"/><rect class="tile" x="74" y="284" width="36" height="36" rx="11" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.3" style="animation-delay:1.0s"/><path d="M88 295 L100 302 L88 309 Z" fill="#fafafa" fill-opacity="0.85"/><rect class="tile" x="120" y="284" width="36" height="36" rx="11" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.3" style="animation-delay:2.0s"/><path d="M134 295 L146 302 L134 309 Z" fill="#fafafa" fill-opacity="0.85"/><rect class="tile" x="166" y="284" width="36" height="36" rx="11" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.3" style="animation-delay:3.0s"/><path d="M180 295 L192 302 L180 309 Z" fill="#fafafa" fill-opacity="0.85"/><text class="monog" x="222" y="306">GOOGLE PLAY</text>
+  <circle class="ringo" cx="316" cy="152" r="70" fill="none" stroke="#fff" stroke-opacity="0.18"/>
+  <rect x="262" y="58" width="108" height="196" rx="24" fill="#0e0e0e" stroke="#fff" stroke-opacity="0.28" stroke-width="1.3"/>
+  <rect x="294" y="66" width="44" height="8" rx="4" fill="#fff" fill-opacity="0.12"/>
+  <rect x="274" y="88" width="62" height="10" rx="5" fill="#fafafa" fill-opacity="0.9"/>
+  <rect x="274" y="106" width="40" height="6" rx="3" fill="#fff" fill-opacity="0.3"/>
+  <rect class="sk" x="274" y="126" width="84" height="34" rx="10" fill="#fff" fill-opacity="0.08" stroke="#fff" stroke-opacity="0.12" style="animation-delay:0s"/>
+  <rect class="sk" x="274" y="168" width="84" height="34" rx="10" fill="#fff" fill-opacity="0.08" stroke="#fff" stroke-opacity="0.12" style="animation-delay:.5s"/>
+  <rect class="sk" x="274" y="210" width="84" height="26" rx="13" fill="#fafafa" fill-opacity="0.85" style="animation-delay:1s"/>
+  <rect x="304" y="244" width="24" height="3" rx="1.5" fill="#fff" fill-opacity="0.25"/>
+
+  <rect class="sweep" x="0.5" y="0.5" width="380" height="332" rx="24" fill="none" stroke="url(#borderSweep)" stroke-opacity="0.85" stroke-width="1.3" pathLength="1000" stroke-linecap="round" style="animation-delay:-0s"/>
+</g></g>
+<g transform="translate(420,24)">
+<g class="rise" style="animation-delay:0.3s" filter="url(#neuShadow)">
+  <rect x="0.5" y="0.5" width="270" height="158" rx="24" fill="url(#cardBg)" stroke="#262626"/>
+  <rect x="0.5" y="0.5" width="270" height="158" rx="24" fill="url(#glowW)"/>
+  <rect x="24" y="0.5" width="222" height="1" fill="url(#hl)"/>
+  <g clip-path="url(#clipS)"><g class="shine" style="animation-delay:2.0s"><rect x="-140" y="-20" width="90" height="198" fill="url(#shineG)" transform="skewX(-20)"/></g></g>
+
+  <text class="idx" x="22" y="30">EXPERIENCE</text>
+  <g clip-path="url(#odoSmall)"><g class="roll1" transform="translate(0,-70)">
+    <text class="num" x="18" y="94" font-size="64">0</text><text class="num" x="18" y="164" font-size="64">1</text>
+  </g></g>
+  <text class="plus" x="60" y="84" font-size="38">+</text>
+  <text class="ttl" x="22" y="124">Year with Flutter</text>
+  <text class="dsc" x="22" y="144" style="font-size:12px">Mobile · Web · Desktop</text>
+  <circle cx="214" cy="72" r="30" fill="none" stroke="#fff" stroke-opacity="0.1" stroke-width="4"/>
+  <circle class="fill" cx="214" cy="72" r="30" fill="none" stroke="#fafafa" stroke-width="4" stroke-linecap="round" stroke-dasharray="188.5" stroke-dashoffset="0" transform="rotate(-90 214 72)"/>
+  <path d="M214 60 L226 72 L214 84 L202 72 Z" fill="none" stroke="#e5e5e5" stroke-opacity="0.8" stroke-width="1.4" stroke-linejoin="round"/>
+  <path class="pulse" d="M214 66 L220 72 L214 78 L208 72 Z" fill="#fafafa"/>
+
+  <rect class="sweep" x="0.5" y="0.5" width="270" height="158" rx="24" fill="none" stroke="url(#borderSweep)" stroke-opacity="0.85" stroke-width="1.3" pathLength="1000" stroke-linecap="round" style="animation-delay:-2.6s"/>
+</g></g>
+<g transform="translate(706,24)">
+<g class="rise" style="animation-delay:0.45s" filter="url(#neuShadow)">
+  <rect x="0.5" y="0.5" width="270" height="158" rx="24" fill="url(#cardBg)" stroke="#262626"/>
+  <rect x="0.5" y="0.5" width="270" height="158" rx="24" fill="url(#glowW)"/>
+  <rect x="24" y="0.5" width="222" height="1" fill="url(#hl)"/>
+  <g clip-path="url(#clipS)"><g class="shine" style="animation-delay:3.0s"><rect x="-140" y="-20" width="90" height="198" fill="url(#shineG)" transform="skewX(-20)"/></g></g>
+
+  <text class="idx" x="22" y="30">AI &amp; ML</text>
+  <text class="num" x="20" y="94" font-size="64">AI</text>
+  <text class="ttl" x="22" y="124">ML integration</text>
+  <text class="dsc" x="22" y="144" style="font-size:12px">Groq · Gemini · ML Kit</text>
+  <line x1="222" y1="50" x2="222" y2="122" stroke="#fff" stroke-opacity="0.15" stroke-dasharray="3 4"/>
+<rect class="node" x="196" y="36" width="52" height="20" rx="10" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.2" style="animation-delay:0.0s"/><text class="mono" x="222" y="49.5" text-anchor="middle" style="font-size:9.5px">LLM</text><rect class="node" x="196" y="62" width="52" height="20" rx="10" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.2" style="animation-delay:1.2s"/><text class="mono" x="222" y="75.5" text-anchor="middle" style="font-size:9.5px">STT</text><rect class="node" x="196" y="88" width="52" height="20" rx="10" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.2" style="animation-delay:2.4s"/><text class="mono" x="222" y="101.5" text-anchor="middle" style="font-size:9.5px">TTS</text><rect class="node" x="196" y="114" width="52" height="20" rx="10" fill="#fff" fill-opacity="0" stroke="#fafafa" stroke-width="1.2" style="animation-delay:3.5999999999999996s"/><text class="mono" x="222" y="127.5" text-anchor="middle" style="font-size:9.5px">OCR</text>
+  <rect class="sweep" x="0.5" y="0.5" width="270" height="158" rx="24" fill="none" stroke="url(#borderSweep)" stroke-opacity="0.85" stroke-width="1.3" pathLength="1000" stroke-linecap="round" style="animation-delay:-5.2s"/>
+</g></g>
+<g transform="translate(420,198)">
+<g class="rise" style="animation-delay:0.6s" filter="url(#neuShadow)">
+  <rect x="0.5" y="0.5" width="556" height="158" rx="24" fill="url(#cardBg)" stroke="#262626"/>
+  <rect x="0.5" y="0.5" width="556" height="158" rx="24" fill="url(#glowW)"/>
+  <rect x="24" y="0.5" width="508" height="1" fill="url(#hl)"/>
+  <g clip-path="url(#clipW)"><g class="shine" style="animation-delay:4.0s"><rect x="-140" y="-20" width="90" height="198" fill="url(#shineG)" transform="skewX(-20)"/></g></g>
+
+  <text class="idx" x="24" y="30">CRAFT</text>
+  <text class="num" x="22" y="94" font-size="64">100%</text>
+  <text class="ttl" x="24" y="124">Passion</text>
+  <text class="dsc" x="24" y="144" style="font-size:12px">MVVM · Clean Architecture</text>
+  <path d="M236 70 H312 L320 56 L331 88 L346 34 L358 82 L366 64 L374 70 H532" fill="none" stroke="#fff" stroke-opacity="0.14" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path class="beat" d="M236 70 H312 L320 56 L331 88 L346 34 L358 82 L366 64 L374 70 H532" fill="none" stroke="url(#beatG)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" pathLength="1000"/>
+<rect x="236" y="116" width="44" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="258.0" y="131" text-anchor="middle">BLoC</text><rect x="286" y="116" width="69" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="320.5" y="131" text-anchor="middle">Provider</text><rect x="361" y="116" width="69" height="22" rx="11" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.1"/><text class="chip" x="395.5" y="131" text-anchor="middle">Riverpod</text>
+  <rect class="sweep" x="0.5" y="0.5" width="556" height="158" rx="24" fill="none" stroke="url(#borderSweep)" stroke-opacity="0.85" stroke-width="1.3" pathLength="1000" stroke-linecap="round" style="animation-delay:-3.9s"/>
+</g></g>
+</svg>

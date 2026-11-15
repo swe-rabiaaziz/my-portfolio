@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380" role="img" aria-label="Let's build something extraordinary. Open to worldwide full-time remote engineering roles and mobile contract builds. Based in Pakistan, UTC+5, replies within 24 hours." xmlns:c2pa="http://c2pa.org/manifest">
+<defs>
+  <linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a0a0a"/><stop offset="0.5" stop-color="#141414"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+  <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1a1a"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient>
+  <linearGradient id="borderSweep" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#525252"/><stop offset="0.5" stop-color="#ffffff"/><stop offset="1" stop-color="#525252"/></linearGradient>
+  <linearGradient id="hl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="shineG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.08"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="scanG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="0.9"/></linearGradient>
+  <linearGradient id="btnShine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="0.5" stop-color="#000" stop-opacity="0.09"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>
+  <linearGradient id="glint" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="640" y2="0">
+    <stop offset="0" stop-color="#8c8c8c"/><stop offset="0.42" stop-color="#d4d4d4"/><stop offset="0.5" stop-color="#ffffff"/><stop offset="0.58" stop-color="#d4d4d4"/><stop offset="1" stop-color="#8c8c8c"/>
+    <animateTransform attributeName="gradientTransform" type="translate" from="-640 0" to="640 0" dur="4.4s" repeatCount="indefinite"/>
+  </linearGradient>
+  <radialGradient id="glowW" cx="1" cy="0" r="0.9"><stop offset="0" stop-color="#fff" stop-opacity="0.08"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="orb" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.08"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#fff" stroke-opacity="0.04" stroke-width="0.8"/></pattern>
+  <radialGradient id="fade" cx="50%" cy="50%" r="65%"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient>
+  <mask id="gridMask"><rect width="1000" height="380" fill="url(#fade)"/></mask>
+  <mask id="ticketMask"><rect width="358" height="326" fill="#fff"/><circle cx="0.5" cy="124" r="11" fill="#000"/><circle cx="357.5" cy="124" r="11" fill="#000"/></mask>
+  <clipPath id="ticketClip"><rect width="357" height="325" rx="24"/></clipPath>
+  <clipPath id="plateClip"><rect width="1000" height="380" rx="28"/></clipPath>
+  <clipPath id="btnClip"><rect x="0" y="0" width="256" height="46" rx="23"/></clipPath>
+  <filter id="shadow" x="-10%" y="-10%" width="125%" height="125%">
+    <feDropShadow dx="4" dy="7" stdDeviation="9" flood-color="#000" flood-opacity="0.75"/>
+    <feDropShadow dx="-1" dy="-1" stdDeviation="4" flood-color="#fff" flood-opacity="0.03"/>
+  </filter>
+</defs>
+
+<style>
+  .kick { font: 700 10.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 3px; fill: #a3a3a3; }
+  .h1   { font: 900 52px 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; letter-spacing: -2.2px; fill: #fafafa; }
+  .h1g  { font: 900 52px 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; letter-spacing: -2.2px; fill: url(#glint); }
+  .sub  { font: 400 14px 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; fill: #a3a3a3; }
+  .btn  { font: 700 14px 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; fill: #0a0a0a; letter-spacing: -0.1px; }
+  .lbl  { font: 600 9.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 2px; fill: #737373; }
+  .val  { font: 600 13px 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; fill: #fafafa; }
+  .big  { font: 900 30px 'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif; letter-spacing: -1px; fill: #fafafa; }
+  .mono { font: 600 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 1.5px; fill: #d4d4d4; }
+
+  .rise  { animation: rise 1s cubic-bezier(.16,1,.3,1) both; }
+  .sweep { stroke-dasharray: 160 840; animation: sweep 9s linear infinite; }
+  .shine { animation: shine 8s ease-in-out infinite; }
+  .drift { animation: drift 16s ease-in-out infinite alternate; }
+  .orbit { transform-origin: 798px 190px; animation: spin 50s linear infinite; }
+  .orbit2{ transform-origin: 798px 190px; animation: spin 80s linear infinite reverse; }
+  .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 2.2s ease-in-out infinite; }
+  .ping  { transform-box: fill-box; transform-origin: center; animation: ping 2.2s ease-out infinite; }
+  .bc    { animation: bc 2.6s ease-in-out infinite; }
+  .scan  { animation: scan 3.6s linear infinite; }
+  .arrow { animation: arrow 1.8s ease-in-out infinite; }
+  .bshine{ animation: bshine 4.5s ease-in-out infinite; }
+  .twinkle{ transform-box: fill-box; transform-origin: center; animation: twinkle 3.6s ease-in-out infinite; }
+
+  @keyframes rise   { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+  @keyframes sweep  { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+  @keyframes shine  { 0% { transform: translateX(0); } 35%,100% { transform: translateX(560px); } }
+  @keyframes drift  { from { transform: translate(-60px, 0); } to { transform: translate(80px, 30px); } }
+  @keyframes spin   { to { transform: rotate(360deg); } }
+  @keyframes pulse  { 0%,100% { transform: scale(1); opacity: .95; } 50% { transform: scale(1.35); opacity: .6; } }
+  @keyframes ping   { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(4); opacity: 0; } }
+  @keyframes bc     { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
+  @keyframes scan   { from { transform: translateX(0); } to { transform: translateX(300px); } }
+  @keyframes arrow  { 0%,100% { transform: translateX(0); } 50% { transform: translateX(4px); } }
+  @keyframes bshine { 0% { transform: translateX(-120px); } 40%,100% { transform: translateX(300px); } }
+  @keyframes twinkle{ 0%,100% { transform: scale(.4); opacity: .15; } 50% { transform: scale(1); opacity: .9; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .rise,.sweep,.shine,.drift,.orbit,.orbit2,.pulse,.ping,.bc,.scan,.arrow,.bshine,.twinkle { animation: none; }
+  }
+</style>
+
+<!-- BACKPLATE -->
+<rect width="1000" height="380" rx="28" fill="url(#plate)"/>
+<g clip-path="url(#plateClip)">
+  <rect width="1000" height="380" fill="url(#grid)" mask="url(#gridMask)"/>
+  <g class="drift"><circle cx="220" cy="150" r="300" fill="url(#orb)"/></g>
+  <g fill="none" stroke="#fff" stroke-opacity="0.05">
+    <circle cx="798" cy="190" r="200"/><circle cx="798" cy="190" r="280"/><circle cx="798" cy="190" r="370"/>
+  </g>
+  <g class="orbit"><circle cx="998" cy="190" r="2.6" fill="#fff" fill-opacity="0.7"/><circle cx="518" cy="190" r="1.8" fill="#fff" fill-opacity="0.4"/></g>
+  <g class="orbit2"><circle cx="1078" cy="190" r="2.2" fill="#fff" fill-opacity="0.5"/></g>
+  <g fill="#fff">
+    <path class="twinkle" transform="translate(588,46)" d="M0-6Q0 0 6 0Q0 0 0 6Q0 0-6 0Q0 0 0-6Z" style="animation-delay:.4s"/>
+    <path class="twinkle" transform="translate(560,330)" d="M0-5Q0 0 5 0Q0 0 0 5Q0 0-5 0Q0 0 0-5Z" style="animation-delay:1.8s"/>
+    <path class="twinkle" transform="translate(966,360)" d="M0-4Q0 0 4 0Q0 0 0 4Q0 0-4 0Q0 0 0-4Z" style="animation-delay:2.6s"/>
+  </g>
+</g>
+
+<!-- LEFT: KICKER -->
+<g class="rise" style="animation-delay:.1s">
+  <circle class="ping" cx="52" cy="52" r="3.5" fill="none" stroke="#fafafa"/>
+  <circle class="pulse" cx="52" cy="52" r="3.5" fill="#fafafa"/>
+  <text class="kick" x="68" y="56">OPEN TO WORK</text>
+</g>
+
+<!-- LEFT: HEADLINE -->
+<g class="rise" style="animation-delay:.25s"><text class="h1" x="46" y="124">Let’s build</text></g>
+<g class="rise" style="animation-delay:.38s"><text class="h1" x="46" y="178">something</text></g>
+<g class="rise" style="animation-delay:.51s"><text class="h1g" x="46" y="232">extraordinary.</text></g>
+
+<!-- LEFT: SUBTITLE -->
+<g class="rise" style="animation-delay:.7s">
+  <text class="sub" x="48" y="272">Open to worldwide full-time remote engineering</text>
+  <text class="sub" x="48" y="292">roles &amp; mobile contract builds.</text>
+</g>
+
+<!-- LEFT: BUTTON (white pill) -->
+<g class="rise" style="animation-delay:.85s">
+  <g transform="translate(48,312)" filter="url(#shadow)">
+    <rect width="256" height="46" rx="23" fill="#fafafa"/>
+    <g clip-path="url(#btnClip)"><g class="bshine"><rect x="0" y="-6" width="60" height="58" fill="url(#btnShine)" transform="skewX(-20)"/></g></g>
+    <text class="btn" x="26" y="28.5">Start a conversation</text>
+    <circle cx="228" cy="23" r="15" fill="#0a0a0a"/>
+    <g class="arrow"><path d="M221 23H234M229 18L234 23L229 28" fill="none" stroke="#fafafa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+  </g>
+</g>
+
+<!-- RIGHT: BOARDING-PASS CARD -->
+<g transform="translate(620,28)">
+  <g class="rise" style="animation-delay:.4s" filter="url(#shadow)">
+    <g mask="url(#ticketMask)">
+      <rect x="0.5" y="0.5" width="356" height="324" rx="24" fill="url(#cardBg)" stroke="#2a2a2a"/>
+      <rect x="0.5" y="0.5" width="356" height="324" rx="24" fill="url(#glowW)"/>
+      <rect x="30" y="0.5" width="297" height="1" fill="url(#hl)"/>
+      <g clip-path="url(#ticketClip)"><g class="shine"><rect x="-140" y="-20" width="90" height="370" fill="url(#shineG)" transform="skewX(-20)"/></g></g>
+    </g>
+    <path d="M0.5 113 A11 11 0 0 1 0.5 135" fill="none" stroke="#2a2a2a"/>
+    <path d="M357.5 113 A11 11 0 0 0 357.5 135" fill="none" stroke="#2a2a2a"/>
+
+    <!-- header -->
+    <text class="lbl" x="26" y="38">AVAILABILITY</text>
+    <circle class="ping" cx="282" cy="35" r="3.5" fill="none" stroke="#fafafa"/>
+    <circle class="pulse" cx="282" cy="35" r="3.5" fill="#fafafa"/>
+    <text class="mono" x="332" y="39" text-anchor="end">OPEN</text>
+    <text class="big" x="26" y="86">Open to work</text>
+    <text class="lbl" x="26" y="108" style="fill:#a3a3a3">REMOTE · WORLDWIDE</text>
+
+    <!-- perforation -->
+    <line x1="22" y1="124" x2="336" y2="124" stroke="#fff" stroke-opacity="0.2" stroke-dasharray="4 5"/>
+
+    <!-- details grid -->
+    <text class="lbl" x="26" y="162">ROLE</text><text class="val" x="26" y="184">Full-time · Remote</text>
+    <text class="lbl" x="196" y="162">ALSO</text><text class="val" x="196" y="184">Freelance · Mobile</text>
+    <text class="lbl" x="26" y="220">BASE</text><text class="val" x="26" y="242">Pakistan · UTC+5</text>
+    <text class="lbl" x="196" y="220">REPLY</text><text class="val" x="196" y="242">Within 24 hours</text>
+
+    <!-- barcode -->
+    <line x1="22" y1="258" x2="336" y2="258" stroke="#fff" stroke-opacity="0.08"/>
+    <rect class="bc" x="24.0" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-0.00s"/><rect class="bc" x="30.7" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-0.07s"/><rect class="bc" x="37.4" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-0.14s"/><rect class="bc" x="44.1" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-0.21s"/><rect class="bc" x="50.8" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-0.28s"/><rect class="bc" x="57.5" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-0.35s"/><rect class="bc" x="64.2" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-0.42s"/><rect class="bc" x="70.9" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-0.49s"/><rect class="bc" x="77.6" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-0.56s"/><rect class="bc" x="84.3" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-0.63s"/><rect class="bc" x="91.0" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-0.70s"/><rect class="bc" x="97.7" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-0.77s"/><rect class="bc" x="104.4" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-0.84s"/><rect class="bc" x="111.1" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-0.91s"/><rect class="bc" x="117.8" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-0.98s"/><rect class="bc" x="124.5" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-1.05s"/><rect class="bc" x="131.2" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-1.12s"/><rect class="bc" x="137.9" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-1.19s"/><rect class="bc" x="144.6" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-1.26s"/><rect class="bc" x="151.3" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-1.33s"/><rect class="bc" x="158.0" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-1.40s"/><rect class="bc" x="164.7" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-1.47s"/><rect class="bc" x="171.4" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-1.54s"/><rect class="bc" x="178.1" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-1.61s"/><rect class="bc" x="184.8" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-1.68s"/><rect class="bc" x="191.5" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-1.75s"/><rect class="bc" x="198.2" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-1.82s"/><rect class="bc" x="204.9" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-1.89s"/><rect class="bc" x="211.6" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-1.96s"/><rect class="bc" x="218.3" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-2.03s"/><rect class="bc" x="225.0" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-2.10s"/><rect class="bc" x="231.7" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-2.17s"/><rect class="bc" x="238.4" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-2.24s"/><rect class="bc" x="245.1" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-2.31s"/><rect class="bc" x="251.8" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-2.38s"/><rect class="bc" x="258.5" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-2.45s"/><rect class="bc" x="265.2" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-2.52s"/><rect class="bc" x="271.9" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-2.59s"/><rect class="bc" x="278.6" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-2.66s"/><rect class="bc" x="285.3" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-2.73s"/><rect class="bc" x="292.0" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-2.80s"/><rect class="bc" x="298.7" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-2.87s"/><rect class="bc" x="305.4" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-2.94s"/><rect class="bc" x="312.1" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-3.01s"/><rect class="bc" x="318.8" y="265.2" width="2.4" height="29.6" rx="1.2" fill="#fafafa" style="animation-delay:-3.08s"/><rect class="bc" x="325.5" y="274.0" width="2.4" height="12.0" rx="1.2" fill="#fafafa" style="animation-delay:-3.15s"/>
+    <g class="scan"><rect x="24" y="260" width="24" height="40" fill="url(#scanG)" fill-opacity="0.22"/><rect x="47" y="260" width="1.5" height="40" fill="#fff"/></g>
+    <text class="lbl" x="26" y="316" style="font-size:8.5px">PKT / UTC+5 · REPLIES WITHIN 24 HOURS</text>
+
+    <rect class="sweep" x="0.5" y="0.5" width="356" height="324" rx="24" fill="none" stroke="url(#borderSweep)" stroke-opacity="0.85" stroke-width="1.3" pathLength="1000" stroke-linecap="round"/>
+  </g>
+</g>
+
+<!-- PLATE BORDER -->
+<rect x="0.5" y="0.5" width="999" height="379" rx="27.5" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 60" width="100%">
+  <defs>
+    <linearGradient id="hBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="hShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#475569" stop-opacity="0">
+        <animate attributeName="offset" values="-0.3;1.3" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="10%" stop-color="#e2e8f0" stop-opacity="0.8">
+        <animate attributeName="offset" values="-0.2;1.4" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="20%" stop-color="#475569" stop-opacity="0">
+        <animate attributeName="offset" values="-0.1;1.5" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="60" fill="url(#hBg)"/>
+  <!-- Left accent line -->
+  <line x1="60" y1="30" x2="440" y2="30" stroke="#1e293b" stroke-width="0.5"/>
+  <!-- Right accent line -->
+  <line x1="760" y1="30" x2="1140" y2="30" stroke="#1e293b" stroke-width="0.5"/>
+  <!-- Shimmer over lines -->
+  <line x1="60" y1="30" x2="440" y2="30" stroke="url(#hShimmer)" stroke-width="1"/>
+  <line x1="760" y1="30" x2="1140" y2="30" stroke="url(#hShimmer)" stroke-width="1"/>
+  <!-- Section Number -->
+  <text x="490" y="36" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-weight="300" font-size="12" fill="#334155" letter-spacing="3">§SECTION_NUM</text>
+  <!-- Section Title -->
+  <text x="710" y="36" text-anchor="middle" font-family="'SF Pro Display','Inter',system-ui,sans-serif" font-weight="800" font-size="14" fill="#94a3b8" letter-spacing="6">§SECTION_TITLE</text>
+  <!-- Corner dots -->
+  <circle cx="50" cy="30" r="2" fill="#1e293b"/><circle cx="1150" cy="30" r="2" fill="#1e293b"/>
+</svg>

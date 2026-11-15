@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" width="100%">
+  <defs>
+    <linearGradient id="svBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/><stop offset="50%" stop-color="#0f172a"/><stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="svCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161f31"/><stop offset="100%" stop-color="#0c1220"/>
+    </linearGradient>
+    <filter id="svShadow">
+      <feDropShadow dx="4" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="220" fill="url(#svBg)"/>
+
+  <!-- Card 1: Cross-Platform Apps -->
+  <g transform="translate(30,20)" filter="url(#svShadow)">
+    <rect width="220" height="180" rx="18" fill="url(#svCard)" stroke="#1e293b" stroke-width="0.5"/>
+    <text x="110" y="55" text-anchor="middle" font-size="28">📱</text>
+    <text x="110" y="85" text-anchor="middle" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="#e2e8f0" letter-spacing="1">Cross-Platform</text>
+    <text x="110" y="105" text-anchor="middle" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="#e2e8f0" letter-spacing="1">Apps</text>
+    <line x1="60" y1="118" x2="160" y2="118" stroke="#1e293b" stroke-width="0.5"/>
+    <text x="110" y="140" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="400" font-size="10" fill="#64748b">
+      <tspan x="110" dy="0">Mobile, Web &amp; Desktop</tspan>
+      <tspan x="110" dy="15">from a single codebase</tspan>
+    </text>
+  </g>
+
+  <!-- Card 2: AI Integration -->
+  <g transform="translate(268,20)" filter="url(#svShadow)">
+    <rect width="220" height="180" rx="18" fill="url(#svCard)" stroke="#1e293b" stroke-width="0.5"/>
+    <text x="110" y="55" text-anchor="middle" font-size="28">🧠</text>
+    <text x="110" y="85" text-anchor="middle" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="#e2e8f0" letter-spacing="1">AI-Powered</text>
+    <text x="110" y="105" text-anchor="middle" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="#e2e8f0" letter-spacing="1">Features</text>
+    <line x1="60" y1="118" x2="160" y2="118" stroke="#1e293b" stroke-width="0.5"/>
+    <text x="110" y="140" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="400" font-size="10" fill="#64748b">
+      <tspan x="110" dy="0">Groq, Gemini, ML Kit</tspan>
+      <tspan x="110" dy="15">STT &amp; intelligent chat</tspan>
+    </text>
+  </g>
+
+  <!-- Card 3: Backend Systems -->
+  <g transform="translate(506,20)" filter="url(#svShadow)">
+    <rect width="220" height="180" rx="18" fill="url(#svCard)" stroke="#1e293b" stroke-width="0.5"/>
+    <text x="110" y="55" text-anchor="middle" font-size="28">☁️</text>
+    <text x="110" y="85" text-anchor="middle" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="#e2e8f0" letter-spacing="1">Backend</text>
+    <text x="110" y="105" text-anchor="middle" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="#e2e8f0" letter-spacing="1">Systems</text>
+    <line x1="60" y1="118" x2="160" y2="118" stroke="#1e293b" stroke-width="0.5"/>
+    <text x="110" y="140" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="400" font-size="10" fill="#64748b">
+      <tspan x="110" dy="0">Supabase, Firebase</tspan>
+      <tspan x="110" dy="15">Auth, RLS, Realtime</tspan>
+    </text>
+  </g>
+
+  <!-- Card 4: Clean Architecture -->
+  <g transform="translate(744,20)" filter="url(#svShadow)">
+    <rect width="220" height="180" rx="18" fill="url(#svCard)" stroke="#1e293b" stroke-width="0.5"/>
+    <text x="110" y="55" text-anchor="middle" font-size="28">🏗️</text>
+    <text x="110" y="85" text-anchor="middle" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="#e2e8f0" letter-spacing="1">Clean</text>
+    <text x="110" y="105" text-anchor="middle" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="#e2e8f0" letter-spacing="1">Architecture</text>
+    <line x1="60" y1="118" x2="160" y2="118" stroke="#1e293b" stroke-width="0.5"/>
+    <text x="110" y="140" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="400" font-size="10" fill="#64748b">
+      <tspan x="110" dy="0">MVVM, BLoC, Provider</tspan>
+      <tspan x="110" dy="15">modular &amp; scalable</tspan>
+    </text>
+  </g>
+
+  <!-- Card 5: Premium UI/UX -->
+  <g transform="translate(982,20)" filter="url(#svShadow)">
+    <rect width="220" height="180" rx="18" fill="url(#svCard)" stroke="#1e293b" stroke-width="0.5"/>
+    <text x="110" y="55" text-anchor="middle" font-size="28">✨</text>
+    <text x="110" y="85" text-anchor="middle" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="#e2e8f0" letter-spacing="1">Premium</text>
+    <text x="110" y="105" text-anchor="middle" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="#e2e8f0" letter-spacing="1">UI / UX</text>
+    <line x1="60" y1="118" x2="160" y2="118" stroke="#1e293b" stroke-width="0.5"/>
+    <text x="110" y="140" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="400" font-size="10" fill="#64748b">
+      <tspan x="110" dy="0">Neumorphism, animations</tspan>
+      <tspan x="110" dy="15">silky-smooth 60fps UIs</tspan>
+    </text>
+  </g>
+</svg>

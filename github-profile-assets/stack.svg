@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%">
+  <defs>
+    <linearGradient id="skBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="pillBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#172033"/>
+    </linearGradient>
+    <filter id="pillShadow">
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+      <feDropShadow dx="-1" dy="-1" stdDeviation="3" flood-color="#fff" flood-opacity="0.02"/>
+    </filter>
+    <linearGradient id="catGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94a3b8"/><stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="catGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748b"/><stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="380" fill="url(#skBg)"/>
+
+  <!-- Row 1: App Development -->
+  <g transform="translate(40,20)">
+    <text x="0" y="20" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="url(#catGrad1)" letter-spacing="4">📱 APP DEVELOPMENT</text>
+    <g transform="translate(0,35)">
+      <g filter="url(#pillShadow)"><rect width="90" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="45" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Flutter</text></g>
+      <g transform="translate(100,0)" filter="url(#pillShadow)"><rect width="70" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="35" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Dart</text></g>
+      <g transform="translate(180,0)" filter="url(#pillShadow)"><rect width="90" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="45" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Android</text></g>
+      <g transform="translate(280,0)" filter="url(#pillShadow)"><rect width="60" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="30" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">iOS</text></g>
+      <g transform="translate(350,0)" filter="url(#pillShadow)"><rect width="110" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="55" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Flutter Web</text></g>
+      <g transform="translate(470,0)" filter="url(#pillShadow)"><rect width="110" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="55" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Desktop</text></g>
+      <g transform="translate(590,0)" filter="url(#pillShadow)"><rect width="140" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="70" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Cross-Platform</text></g>
+    </g>
+  </g>
+
+  <!-- Row 2: Backend & Cloud -->
+  <g transform="translate(40,95)">
+    <text x="0" y="20" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="url(#catGrad1)" letter-spacing="4">☁️ BACKEND &amp; CLOUD</text>
+    <g transform="translate(0,35)">
+      <g filter="url(#pillShadow)"><rect width="100" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="50" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Supabase</text></g>
+      <g transform="translate(110,0)" filter="url(#pillShadow)"><rect width="95" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="47" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Firebase</text></g>
+      <g transform="translate(215,0)" filter="url(#pillShadow)"><rect width="130" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="65" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Cloud Firestore</text></g>
+      <g transform="translate(355,0)" filter="url(#pillShadow)"><rect width="100" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="50" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">REST APIs</text></g>
+      <g transform="translate(465,0)" filter="url(#pillShadow)"><rect width="120" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="60" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">PostgreSQL</text></g>
+      <g transform="translate(595,0)" filter="url(#pillShadow)"><rect width="120" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="60" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">WebSockets</text></g>
+      <g transform="translate(725,0)" filter="url(#pillShadow)"><rect width="130" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="65" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Supabase Auth</text></g>
+    </g>
+  </g>
+
+  <!-- Row 3: State & Architecture -->
+  <g transform="translate(40,170)">
+    <text x="0" y="20" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="url(#catGrad1)" letter-spacing="4">🏗️ STATE &amp; ARCHITECTURE</text>
+    <g transform="translate(0,35)">
+      <g filter="url(#pillShadow)"><rect width="110" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="55" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">BLoC / Cubit</text></g>
+      <g transform="translate(120,0)" filter="url(#pillShadow)"><rect width="95" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="47" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Provider</text></g>
+      <g transform="translate(225,0)" filter="url(#pillShadow)"><rect width="80" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="40" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">MVVM</text></g>
+      <g transform="translate(315,0)" filter="url(#pillShadow)"><rect width="150" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="75" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Clean Architecture</text></g>
+      <g transform="translate(475,0)" filter="url(#pillShadow)"><rect width="100" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="50" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Riverpod</text></g>
+      <g transform="translate(585,0)" filter="url(#pillShadow)"><rect width="150" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="75" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Repository Pattern</text></g>
+    </g>
+  </g>
+
+  <!-- Row 4: AI / ML -->
+  <g transform="translate(40,245)">
+    <text x="0" y="20" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="url(#catGrad1)" letter-spacing="4">🧠 AI / ML INTEGRATION</text>
+    <g transform="translate(0,35)">
+      <g filter="url(#pillShadow)"><rect width="110" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="55" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Groq LLM</text></g>
+      <g transform="translate(120,0)" filter="url(#pillShadow)"><rect width="120" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="60" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Gemini API</text></g>
+      <g transform="translate(250,0)" filter="url(#pillShadow)"><rect width="110" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="55" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">ML Kit</text></g>
+      <g transform="translate(370,0)" filter="url(#pillShadow)"><rect width="60" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="30" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">OCR</text></g>
+      <g transform="translate(440,0)" filter="url(#pillShadow)"><rect width="130" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="65" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Speech-to-Text</text></g>
+      <g transform="translate(580,0)" filter="url(#pillShadow)"><rect width="120" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="60" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Text-to-Speech</text></g>
+      <g transform="translate(710,0)" filter="url(#pillShadow)"><rect width="160" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="80" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Prompt Engineering</text></g>
+    </g>
+  </g>
+
+  <!-- Row 5: Data & Tools -->
+  <g transform="translate(40,320)">
+    <text x="0" y="20" font-family="'SF Pro Display','Inter',sans-serif" font-weight="800" font-size="13" fill="url(#catGrad1)" letter-spacing="4">💾 DATA &amp; TOOLS</text>
+    <g transform="translate(0,35)">
+      <g filter="url(#pillShadow)"><rect width="80" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="40" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">SQLite</text></g>
+      <g transform="translate(90,0)" filter="url(#pillShadow)"><rect width="100" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="50" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Drift ORM</text></g>
+      <g transform="translate(200,0)" filter="url(#pillShadow)"><rect width="70" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="35" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Hive</text></g>
+      <g transform="translate(280,0)" filter="url(#pillShadow)"><rect width="55" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="27" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Git</text></g>
+      <g transform="translate(345,0)" filter="url(#pillShadow)"><rect width="85" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="42" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">GitHub</text></g>
+      <g transform="translate(440,0)" filter="url(#pillShadow)"><rect width="90" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="45" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">VS Code</text></g>
+      <g transform="translate(540,0)" filter="url(#pillShadow)"><rect width="140" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="70" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Android Studio</text></g>
+      <g transform="translate(690,0)" filter="url(#pillShadow)"><rect width="80" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="40" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Figma</text></g>
+      <g transform="translate(780,0)" filter="url(#pillShadow)"><rect width="120" height="32" rx="16" fill="url(#pillBg)" stroke="#334155" stroke-width="0.5"/><text x="60" y="21" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="600" font-size="11" fill="#e2e8f0">Google Maps</text></g>
+    </g>
+  </g>
+</svg>
