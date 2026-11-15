@@ -26,15 +26,15 @@
 
 <br/>
 
-<img src="assets/services.svg" width="100%" alt="Services: AI Voice & Smart Apps, Cross-Platform Flutter, Tactile UI & 120fps, Cloud & Offline Persistence, and Clean Architecture"/>
+<img src="assets/services.svg" width="100%" alt="Services: AI Voice &amp; Smart Apps, Cross-Platform Flutter, Tactile UI &amp; 120fps, Cloud &amp; Offline Persistence, and Clean Architecture"/>
 
 <br/>
 
-<img src="assets/jank-slayer.svg" width="100%" alt="Jank Slayer: Rabia Aziz's Cyber Katana slices through frame drops, stream leaks, rebuild storms, thread locks, and ANR freezes into 120 FPS Impeller perfection."/>
+<img src="assets/stats.svg" width="100%" alt="Stats: 4+ production apps, 1+ years Flutter development, AI &amp; ML integration, 100% passion"/>
 
 <br/>
 
-<img src="assets/terminal.svg" width="100%" alt="Terminal emulator showing whoami, skills.dart, current focus, and contact links"/>
+<img src="assets/terminal.svg" width="100%" alt="Apple iOS Terminal showing Rabia Aziz's identity, engineering philosophy, and Developer Passport"/>
 
 <br/>
 
@@ -50,90 +50,94 @@ Four production applications authored, engineered, and published live on the **G
 
 <br/>
 
-<table width="100%" border="0" cellspacing="16" cellpadding="0">
+<table width="100%" border="0" cellspacing="8" cellpadding="0">
 <tr>
-<td width="50%" valign="top">
+<td width="50%" align="left" valign="top">
+
+<a href="https://play.google.com/store/apps/details?id=com.us.citizenship.test.naturalization.civics.prep&hl=en">
+  <img src="assets/projects/civic_coach_tablet.png" width="360" alt="CivicCoach Tablet Showcase"/>
+</a>
 
 ### 🏛️ 01 · CivicCoach — AI US Citizenship
 *AI Voice Interviews · Spaced Repetition · Official 128 Questions*
 
-<a href="https://play.google.com/store/apps/details?id=com.us.citizenship.test.naturalization.civics.prep&hl=en">
-  <img src="assets/projects/civic_coach_tablet.png" width="100%" alt="CivicCoach Tablet Showcase"/>
-</a>
+• **AI Voice Mock Interviews:** Speech-to-Text &amp; automated oral scoring.  
+• **SM-2 Algorithm:** Spaced-repetition flashcards tailored to retention curves.  
+• **Dynamic Officials Lookup:** Live ZIP query for US Senators &amp; Governors.  
+• **Bilingual &amp; Audio:** Full English &amp; Spanish with synchronized narration.  
 
-- **AI Voice Mock Interviews**: Realistic speech dialogue with real-time Speech-to-Text &amp; automated oral scoring.
-- **SM-2 Algorithm**: Spaced-repetition flashcards tailored to individual retention curves.
-- **Dynamic Officials Lookup**: Live ZIP-code query for US Senators, Governors &amp; Reps.
-- **Bilingual &amp; Audio**: English &amp; Spanish with synchronized narration.
+**Stack:** `Flutter` · `Dart` · `Drift ORM` · `SQLite` · `STT/TTS` · `Provider`
 
-```text
-Stack: Flutter · Dart · Drift ORM · SQLite · STT/TTS · Provider
-```
+<br/>
 
 <a href="https://play.google.com/store/apps/details?id=com.us.citizenship.test.naturalization.civics.prep&hl=en"><img src="https://img.shields.io/badge/VIEW_ON_GOOGLE_PLAY-FAFAFA?style=for-the-badge&logo=googleplay&logoColor=0A0A0A" alt="CivicCoach on Google Play"/></a>
 
 </td>
-<td width="50%" valign="top">
+<td width="50%" align="left" valign="top">
+
+<a href="https://play.google.com/store/apps/details?id=com.ethiopia.zemen.calendar.aqotater.ethiopian.habesha&hl=en">
+  <img src="assets/projects/zemen_tablet.png" width="360" alt="Zemen Calendar Tablet Showcase"/>
+</a>
 
 ### 📅 02 · Ethiopian Calendar — Zemen App
 *13-Month Ge'ez Navigation · 12H Sunrise Clock · Cultural Hub*
 
-<a href="https://play.google.com/store/apps/details?id=com.ethiopia.zemen.calendar.aqotater.ethiopian.habesha&hl=en">
-  <img src="assets/projects/zemen_tablet.png" width="100%" alt="Zemen Calendar Tablet Showcase"/>
-</a>
+• **13-Month Ge'ez Navigation:** Full year with 12 months of 30 days + Pagume.  
+• **12-Hour Sunrise Clock:** Interactive widget tracking traditional daytime cycles.  
+• **Orthodox &amp; Islamic Sync:** Fasting periods, saints days &amp; prayer timetables.  
+• **Holiday Reminders:** Dynamic national holiday countdowns &amp; local events.  
 
-- **13-Month Ge'ez Navigation**: Complete year with 12 months of 30 days plus Pagume.
-- **12-Hour Sunrise Clock**: Interactive widget tracking traditional sunrise cycles.
-- **Orthodox &amp; Islamic Sync**: Fasting periods, saints days &amp; prayer timetables.
-- **Holiday Reminders**: Dynamic national holiday countdowns &amp; local events.
+**Stack:** `Flutter` · `Dart` · `Calendar Engine` · `Local Persistence` · `Provider`
 
-```text
-Stack: Flutter · Dart · Calendar Engine · Local Persistence · Provider
-```
+<br/>
 
 <a href="https://play.google.com/store/apps/details?id=com.ethiopia.zemen.calendar.aqotater.ethiopian.habesha&hl=en"><img src="https://img.shields.io/badge/VIEW_ON_GOOGLE_PLAY-FAFAFA?style=for-the-badge&logo=googleplay&logoColor=0A0A0A" alt="Zemen on Google Play"/></a>
 
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td width="50%" align="left" valign="top">
 
-### 🧘 03 · ZenPeace — Pomodoro & Mindful Flow
-*Ambient Soundscapes · Focus Intervals · fl_chart Analytics*
+<br/>
 
 <a href="https://play.google.com/store/apps/details?id=com.zenpeace.pomodoro.focus.timer.mindfulstate&hl=en">
-  <img src="assets/projects/zenpeace_tablet.png" width="100%" alt="ZenPeace Tablet Showcase"/>
+  <img src="assets/projects/zenpeace_tablet.png" width="360" alt="ZenPeace Tablet Showcase"/>
 </a>
 
-- **Customizable Rituals**: Configurable focus sessions, short breaks &amp; deep flow cycles.
-- **Curated Soundscapes**: Looped high-fidelity ambient audio (rain, waves, lofi) via `just_audio`.
-- **Productivity Analytics**: Daily streaks &amp; completion frequency charts via `fl_chart`.
-- **Tactile Touch**: Haptic feedback triggers on timer thresholds with zero visual clutter.
+### 🧘 03 · ZenPeace — Pomodoro &amp; Mindful Flow
+*Ambient Soundscapes · Focus Intervals · fl_chart Analytics*
 
-```text
-Stack: Flutter · Dart · Provider · just_audio · fl_chart · Caching
-```
+• **Customizable Rituals:** Focus intervals, short breaks &amp; restoration cycles.  
+• **Curated Soundscapes:** Looped ambient audio (rain, waves, lofi) via `just_audio`.  
+• **Productivity Analytics:** Daily streaks &amp; completion frequency via `fl_chart`.  
+• **Tactile Touch:** Haptic feedback triggers on thresholds with zero UI clutter.  
+
+**Stack:** `Flutter` · `Dart` · `Provider` · `just_audio` · `fl_chart` · `Caching`
+
+<br/>
 
 <a href="https://play.google.com/store/apps/details?id=com.zenpeace.pomodoro.focus.timer.mindfulstate&hl=en"><img src="https://img.shields.io/badge/VIEW_ON_GOOGLE_PLAY-FAFAFA?style=for-the-badge&logo=googleplay&logoColor=0A0A0A" alt="ZenPeace on Google Play"/></a>
 
 </td>
-<td width="50%" valign="top">
+<td width="50%" align="left" valign="top">
 
-### 💓 04 · Health Tracker — Vitals & BP Monitor
-*Blood Pressure · Pulse Rate · On-Device SQLite · Clinical Reports*
+<br/>
 
 <a href="https://play.google.com/store/apps/details?id=com.vitals.bp.family.health.tracker&hl=en">
-  <img src="assets/projects/health_tracker_tablet.png" width="100%" alt="Health Tracker Tablet Showcase"/>
+  <img src="assets/projects/health_tracker_tablet.png" width="360" alt="Health Tracker Tablet Showcase"/>
 </a>
 
-- **Comprehensive Telemetry**: Blood Pressure, Pulse (BPM), Glucose &amp; Body Temp.
-- **Cardiovascular Trends**: Interactive visual graphs with weekly/monthly health summaries.
-- **100% Private &amp; Offline**: Zero cloud dependency; all telemetry secured in local SQFlite.
-- **Clinical Export**: Historical health reports exportable for physician review.
+### 💓 04 · Health Tracker — Vitals &amp; BP Monitor
+*Blood Pressure · Pulse Rate · On-Device SQLite · Clinical Reports*
 
-```text
-Stack: Flutter · Dart · SQFlite · Provider · Data Vis · Clean Arch
-```
+• **Comprehensive Telemetry:** Blood Pressure, Pulse, Glucose &amp; Body Temp.  
+• **Cardiovascular Trends:** Interactive visual graphs with health summaries.  
+• **100% Private &amp; Offline:** Zero cloud sync; secured in local SQLite.  
+• **Clinical Export:** Historical health telemetry exportable for medical consult.  
+
+**Stack:** `Flutter` · `Dart` · `SQFlite` · `Provider` · `Data Vis` · `Clean Arch`
+
+<br/>
 
 <a href="https://play.google.com/store/apps/details?id=com.vitals.bp.family.health.tracker&hl=en"><img src="https://img.shields.io/badge/VIEW_ON_GOOGLE_PLAY-FAFAFA?style=for-the-badge&logo=googleplay&logoColor=0A0A0A" alt="Health Tracker on Google Play"/></a>
 
@@ -159,7 +163,7 @@ Great software isn't just about how it looks on day one. It's about how it perfo
 
 <br/>
 
-<img src="assets/stats.svg" width="100%" alt="Stats: 4+ production apps, 1+ years Flutter development, AI & ML integration, 100% passion"/>
+<img src="assets/jank-slayer.svg" width="100%" alt="Jank Slayer: Rabia Aziz's Cyber Katana slices through frame drops, stream leaks, rebuild storms, thread locks, and ANR freezes into 120 FPS Impeller perfection."/>
 
 <br/>
 
@@ -330,11 +334,7 @@ flowchart LR
 
 <div align="center">
 
-<img src="assets/github-stats.svg" width="100%" alt="Rabia Aziz's GitHub Statistics &amp; Top Languages"/>
-
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com?user=swe-rabiaaziz&background=0A0A0A&ring=FAFAFA&fire=FAFAFA&currStreakLabel=FAFAFA&currStreakNum=FAFAFA&sideLabels=A3A3A3&sideNums=FAFAFA&dates=737373&stroke=262626&border=262626&border_radius=16" alt="GitHub streak"/>
+<img src="assets/github-stats.svg" width="100%" alt="Rabia Aziz's GitHub Command Center: Activity, 2-Day Streak &amp; Most Used Languages"/>
 
 <br/><br/>
 
