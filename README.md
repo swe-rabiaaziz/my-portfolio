@@ -57,4 +57,8 @@ pnpm start
 ## Author
 
 - **Author:** Rabia Aziz
+- **Stack Overflow:** [rabia-aziz](https://stackoverflow.com/users/33322250/rabia-aziz)
+- **LinkedIn:** [swe-rabiaaziz](https://www.linkedin.com/in/swe-rabiaaziz/)
+- **GitHub:** [@swe-rabiaaziz](https://github.com/swe-rabiaaziz)
+- **Portfolio:** [swe-rabia-aziz.vercel.app](https://swe-rabia-aziz.vercel.app/)
 - **Contact:** swe.rabiaaziz@gmail.com

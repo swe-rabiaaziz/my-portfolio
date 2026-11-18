@@ -78,6 +78,7 @@ export default function JsonLd() {
         sameAs: [
           'https://github.com/swe-rabiaaziz',
           'https://www.linkedin.com/in/swe-rabiaaziz/',
+          'https://stackoverflow.com/users/33322250/rabia-aziz',
           'https://www.instagram.com/swe.rabiaaziz/',
           'https://www.tiktok.com/@swe.rabiaaziz',
           'https://www.facebook.com/swe.rabiaaziz',
