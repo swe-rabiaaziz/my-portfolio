@@ -3,7 +3,6 @@
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { isMobileDevice } from '@/lib/utils';
 
 /* â•â•â• PREMIUM KATANA SLASH EFFECT â•â•â•
    A real sword-cut reads as: a fast white bloom (the flash of impact), a thin
@@ -96,13 +95,6 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    // Skip splash screen immediately only on mobile devices (phones); keep on tablet & desktop
-    if (isMobileDevice()) {
-      onComplete();
-      setIsVisible(false);
-      return;
-    }
-
     const t1 = setTimeout(() => setPhase('slash1'), 600);
     const t2 = setTimeout(() => setPhase('slash2'), 1100);
     const t3 = setTimeout(() => setPhase('slash3'), 1600);
@@ -123,13 +115,14 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
       setIsVisible(false);
     }, 4500);
 
-    // Allow user to press any key or click to skip immediately
+    // Allow user to press any key, click, or tap to skip immediately
     const handleSkip = () => {
       onComplete();
       setIsVisible(false);
     };
     window.addEventListener('keydown', handleSkip, { once: true });
     window.addEventListener('click', handleSkip, { once: true });
+    window.addEventListener('touchstart', handleSkip, { once: true });
 
     return () => {
       clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4);
@@ -137,6 +130,7 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
       clearTimeout(t9); clearTimeout(safety);
       window.removeEventListener('keydown', handleSkip);
       window.removeEventListener('click', handleSkip);
+      window.removeEventListener('touchstart', handleSkip);
     };
   }, [onComplete]);
 
@@ -217,7 +211,7 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
         alt="Rabia Aziz - Flutter Developer Brand Logo"
         width={180}
         height={180}
-        className="rounded-full drop-shadow-[0_0_40px_rgba(255,255,255,0.4)] z-10"
+        className="rounded-full drop-shadow-[0_0_40px_rgba(255,255,255,0.4)] z-10 w-28 h-28 sm:w-36 sm:h-36 md:w-[180px] md:h-[180px]"
         priority
       />
     </div>
@@ -229,7 +223,7 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
         // Fade the entire splash wrapper to opacity:0 before unmounting
         // â€” home page renders underneath while this is still covering it
         <motion.div
-          className={`fixed inset-0 z-[9999] bg-black overflow-hidden pointer-events-none splash-screen-desktop-only ${getShakeClass()}`}
+          className={`fixed inset-0 z-[9999] bg-black overflow-hidden pointer-events-none ${getShakeClass()}`}
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.4, ease: 'easeInOut' } }}
           style={{ willChange: 'opacity, transform' }}
@@ -279,29 +273,36 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
             initial="intro"
             animate={phase}
           >
-            <div className="relative h-10 w-full items-center justify-center flex drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)]">
-              <div className="h-full w-3 bg-gradient-to-b from-slate-400 via-slate-300 to-slate-500 rounded-l-md border border-slate-700 z-30 shadow-[0_0_5px_rgba(0,0,0,0.8)]"></div>
-              <div className="h-full w-28 sm:w-40 md:w-56 bg-slate-900 border-y border-slate-800 relative flex items-center justify-center shadow-[inset_0_0_15px_rgba(0,0,0,1)] z-20 group">
+            <div className="relative h-10 sm:h-11 md:h-10 w-full items-center justify-center flex drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)]">
+              <div className="h-full w-2 sm:w-2.5 md:w-3 bg-gradient-to-b from-slate-400 via-slate-300 to-slate-500 rounded-l-md border border-slate-700 z-30 shadow-[0_0_5px_rgba(0,0,0,0.8)] shrink-0"></div>
+              <div className="h-full w-24 sm:w-36 md:w-56 bg-slate-900 border-y border-slate-800 relative flex items-center justify-center shadow-[inset_0_0_15px_rgba(0,0,0,1)] z-20 group shrink-0">
                 <div className="absolute inset-0 opacity-40 transition-opacity duration-300" style={{ background: `linear-gradient(45deg, #1e293b 25%, transparent 25%, transparent 75%, #1e293b 75%, #1e293b), linear-gradient(-45deg, #1e293b 25%, transparent 25%, transparent 75%, #1e293b 75%, #1e293b)`, backgroundSize: `12px 12px` }}></div>
-                <div className="relative z-10 flex items-center gap-2 px-2 bg-black/40 rounded shadow-md">
-                  <div className="w-7 h-7 rounded border border-slate-500" style={{ backgroundImage: "url('/messageContainerBG.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                    <div className="w-full h-full bg-black/50 flex items-center justify-center text-[10px] font-black text-white">RA</div>
+                <div className="relative z-10 flex items-center gap-1.5 sm:gap-2 px-1.5 sm:px-2 h-6 sm:h-7 bg-black/75 rounded-full border border-slate-700/80 shadow-md">
+                  <div
+                    className="neu-header-badge relative w-[18px] h-[18px] sm:w-[22px] sm:h-[22px] rounded-md sm:rounded-lg overflow-hidden flex items-center justify-center flex-shrink-0 shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+                    style={{ backgroundImage: "url('/messageContainerBG.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+                  >
+                    <span className="absolute inset-0 bg-gradient-to-br from-black/60 via-slate-900/50 to-black/60 rounded-md sm:rounded-lg" />
+                    <span className="absolute inset-0 rounded-md sm:rounded-lg border border-white/30" />
+                    <span className="relative z-10 text-white font-black text-[8px] sm:text-[9px] tracking-wider leading-none">RA</span>
                   </div>
-                  <span className="text-white font-black tracking-widest text-sm drop-shadow-[0_2px_4px_rgba(0,0,0,1)]">RABIA</span>
+                  <span className="text-white font-black tracking-wider text-[10px] sm:text-xs drop-shadow-[0_2px_4px_rgba(0,0,0,1)] leading-none">
+                    RABIA
+                  </span>
                 </div>
               </div>
-              <div className="h-[130%] w-2.5 bg-gradient-to-b from-slate-800 via-slate-500 to-slate-900 rounded-sm border border-black z-30 shadow-[0_0_10px_rgba(0,0,0,1)]"></div>
-              <div className="h-[90%] w-4 bg-gradient-to-b from-slate-300 via-white to-slate-400 z-20 shadow-[2px_0_5px_rgba(0,0,0,0.3)]"></div>
-              <div className="h-[80%] flex-1 bg-gradient-to-b from-slate-400 via-white to-slate-200 relative flex items-center justify-end px-3 sm:px-6 md:px-12 z-10 border-b-2 border-white/80 shadow-[0_8px_15px_rgba(0,0,0,0.4)]" style={{ clipPath: 'polygon(0 0, 98.5% 0, 100% 50%, 98.5% 100%, 0 100%)' }}>
+              <div className="h-[125%] sm:h-[130%] w-2 sm:w-2.5 bg-gradient-to-b from-slate-800 via-slate-500 to-slate-900 rounded-sm border border-black z-30 shadow-[0_0_10px_rgba(0,0,0,1)] shrink-0"></div>
+              <div className="h-[88%] sm:h-[90%] w-2.5 sm:w-3.5 md:w-4 bg-gradient-to-b from-slate-300 via-white to-slate-400 z-20 shadow-[2px_0_5px_rgba(0,0,0,0.3)] shrink-0"></div>
+              <div className="h-[82%] sm:h-[80%] flex-1 bg-gradient-to-b from-slate-400 via-white to-slate-200 relative flex items-center justify-end px-2 sm:px-4 md:px-8 lg:px-12 z-10 border-b-2 border-white/80 shadow-[0_8px_15px_rgba(0,0,0,0.4)] min-w-0" style={{ clipPath: 'polygon(0 0, 98.5% 0, 100% 50%, 98.5% 100%, 0 100%)' }}>
                 <div className="absolute bottom-0 w-full h-[2px] bg-white opacity-90 shadow-[0_0_8px_#ffffff]"></div>
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: phase === 'dock' ? 1 : 0 }}
                   transition={{ delay: 0.6, duration: 0.8 }}
-                  className="flex gap-2.5 sm:gap-6 md:gap-8 lg:gap-12 items-center relative z-20 mr-1 sm:mr-4 overflow-hidden"
+                  className="flex gap-2 sm:gap-4 md:gap-5 lg:gap-8 xl:gap-10 items-center relative z-20 mr-1 sm:mr-3 overflow-hidden"
                 >
                   {['Home', 'About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
-                    <span key={item} className="relative font-black tracking-[0.15em] uppercase text-xs text-slate-800 py-1">
+                    <span key={item} className="relative font-black tracking-wider lg:tracking-[0.15em] uppercase text-[10px] sm:text-[11px] lg:text-xs text-slate-800 py-0.5 whitespace-nowrap">
                       {item}
                     </span>
                   ))}
@@ -311,17 +312,6 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
           </motion.div>
 
           <style jsx>{`
-            /* Hide splash screen completely on mobile devices (phones), keeping it on tablet and desktop */
-            @media (max-width: 767px) {
-              .splash-screen-desktop-only {
-                display: none !important;
-              }
-            }
-            @media (max-height: 500px) and (max-width: 950px) and (pointer: coarse) {
-              .splash-screen-desktop-only {
-                display: none !important;
-              }
-            }
             @keyframes rumble {
               0%, 100% { transform: translate(0, 0); }
               50% { transform: translate(-2px, 2px); }
